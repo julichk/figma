@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+  background: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  font-size: 14px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+
+  border: 0;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.chrome-picker {
+  position: absolute;
+}
+
+/* style:*/
+
+body {
+  margin: 10px;
+}
+
+h1 {
+  border: 3px solid darkcyan;
+  font-size: 38px;
+}
+
+.form {
+  width: 500px;
+  border: 3px solid rebeccapurple;
+  margin: 10px auto;
+  height: 300px;
+}
+
+.check {
+  color: #000000;
+  padding: 6px;
+}
+
+.cringe {
+  border: 2px solid teal;
+  margin: 10px auto;
+  height: 183px;
+}
+
+.products-item {
+  /*border: 3px solid rgb(0, 51, 255);*/
+  font-size: 20px;
+  position: relative;
+  top: 10px;
+  left: 100px;
+  display: inline-block;
+  padding: 5px;
+  height: 170px;
+}
+
+.regular-checkbox {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #000000;
+  box-shadow: 0 1px 2px rgba(9, 24, 21, 0.05),
+    inset 0px -15px 10px -12px rgba(89, 22, 22, 0.05);
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+
+regular-checkbox:active,
+.regular-checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 3px rgba(203, 12, 12, 0.1);
+}
+
+.regular-checkbox:checked {
+  background-color: #000000;
+  border: 1px solid #ffffff;
+  box-shadow: 2px 2px 9px rgb(0, 0, 0);
+  transition: ease-in 0.5s;
+}
+
+.regular-checkbox:checked:after {
+  content: "\25C9";
+  font-size: 14px;
+  position: absolute;
+  bottom: -2px;
+  left: 2px;
+  color: #fbfdfb;
+  text-shadow: #360531;
+}
+
+/*.big-checkbox {
+    padding: 18px;
+  }
+  
+  .big-checkbox:checked:after {
+    font-size: 28px;
+    left: 6px;
+  }*/
+
+.dress {
+}
+.suit {
+  appearance: none;
+}
+.sport-suit {
+}
+.jeans {
+}
+.counts {
+}
+
+select {
+  /* background-color: #18af22;
+    display: inline-block;
+    padding: 5px;*/
+  color: #000000;
+}
+
+.select-product {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  /*width: 50px;
+   left: 60px;
+   position: relative;
+   left: 250px;
+    bottom: 100px;
+    padding: 5px;*/
+}
+
+.counts {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  left: 100px;
+  bottom: -10px;
+  height: 158px;
+}
+
+.count-dress {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0px 1px 4px 7px rgb(0, 0, 0);
+}
+
+.count-suit {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0px 1px 4px 7px rgb(0, 0, 0);
+}
+
+.count-sport {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0px 1px 4px 7px rgb(0, 0, 0);
+}
+
+.count-jeans {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0px 1px 4px 7px rgb(0, 0, 0);
+}
+
+.button-item {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 5px;
+  width: 170px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 3px auto;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.button-item:hover {
+  background-color: #000000;
+  transition: ease-in-out 0.5s;
+  box-shadow: 0px 1px 7px 1px rgb(7, 0, 0);
+}
+
+p:hover {
+  color: #ffffff;
+  transition: ease-in-out 0.5s;
+}
