@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./forms3.css">
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Оберіть товар</h1>
+    <section class="form">
+      <form>
+        <!--Products-->
+        <div class="cringe">
+          <div class="products-item">
+              <div class="check">
+                <input
+                  type="checkbox"
+                  name="product-dress"
+                  id="products"
+                  value="Dress"
+                  required
+                  class="regular-checkbox big-checkbox"
+                />
+                <label for="products">Плаття чорне</label>
+              </div>
+              <div class="check">
+               <input
+                  type="checkbox"
+                  name="products"
+                  id="product-suit"
+                  value="Classic"
+                  required
+                  class="regular-checkbox big-checkbox"
+                />
+                <label for="product-suit">Костюм класичний</label>
+             </div>
+             <div class="check">
+                <input
+                  type="checkbox"
+                  name="products"
+                  id="product-sport"
+                  value="Sport"
+                  required
+                  class="regular-checkbox big-checkbox"
+                />
+                <label for="product-sport">Костюм спортивний</label>
+              </div>
+              <div class="check">
+               <input
+                  type="checkbox"
+                  name="product-jeans"
+                  id="products"
+                  value="Jeans"
+                  required
+                  class="regular-checkbox big-checkbox"
+                />
+                <label for="products">Джинси</label>
+                
+              </div>
+            </div>
+          <!--/Products-->
+          <!--Counts-->
+          <div class="counts">
+          
+            <div class="select-product">
+              <select class="count-dress" >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+             </select>
+            </div>
+            
+            <div class="select-product">
+              <select class="count-suit" >
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+              </select>
+           </div>
+              <div class="select-product">
+                <select class="count-sport" >
+                 <option>1</option>
+                 <option>2</option>
+                 <option>3</option>
+               </select>
+              </div>
+              <div class="select-product">
+               <select class="count-jeans" >
+                 <option>1</option>
+                 <option>2</option>
+                 <option>3</option>
+               </select>
+             </div>
+            </div>
+          </div>
+        </div>
+        <!--/Counts-->
+        <div class="button-item">
+          <button type="submit"><p>Додати до кошика</p></button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
