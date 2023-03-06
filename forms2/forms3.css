@@ -181,31 +181,13 @@ border-radius: 10px;
   color: #fbfdfb;
 }
 
-/*.big-checkbox {
-    padding: 18px;
-  }
-  
-  .big-checkbox:checked:after {
-    font-size: 28px;
-    left: 6px;
-  }*/
-
 select {
-  /* background-color: #18af22;
-    display: inline-block;
-    padding: 5px;*/
   color: #000000;
 }
 
 .select-product {
   border: 1px solid rgb(0, 0, 0);
   padding: 10px;
-  /*width: 50px;
-   left: 60px;
-   position: relative;
-   left: 250px;
-    bottom: 100px;
-    padding: 5px;*/
 }
 
 .counts {
