@@ -102,18 +102,34 @@ p {
 
 body {
   margin: 10px;
+  background-image: url(./images/bg.avif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  
 }
 
 h1 {
-  border: 3px solid darkcyan;
+  border: 3px solid #ffffff;
   font-size: 38px;
+  width: 300px;
+  margin: 10px auto;
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  top: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 0px 7px 2px #ffffff;
 }
 
 .form {
-  width: 500px;
-  border: 3px solid rebeccapurple;
+  width: 400px;
+  box-shadow: 1px 0px 7px 2px #ffffff;
   margin: 10px auto;
-  height: 300px;
+  height: 260px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  top: 50px
 }
 
 .check {
@@ -122,17 +138,17 @@ h1 {
 }
 
 .cringe {
-  border: 2px solid teal;
+border-radius: 10px;
   margin: 10px auto;
   height: 183px;
+  background-color: #ffffff;
 }
 
 .products-item {
-  /*border: 3px solid rgb(0, 51, 255);*/
   font-size: 20px;
   position: relative;
   top: 10px;
-  left: 100px;
+  left: 50px;
   display: inline-block;
   padding: 5px;
   height: 170px;
@@ -140,20 +156,13 @@ h1 {
 
 .regular-checkbox {
   -webkit-appearance: none;
-  background-color: #fafafa;
+  background-color: #ffffff;
   border: 1px solid #000000;
-  box-shadow: 0 1px 2px rgba(9, 24, 21, 0.05),
-    inset 0px -15px 10px -12px rgba(89, 22, 22, 0.05);
   padding: 9px;
   border-radius: 3px;
   display: inline-block;
   position: relative;
-}
-
-regular-checkbox:active,
-.regular-checkbox:checked:active {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
-    inset 0px 1px 3px rgba(203, 12, 12, 0.1);
+  left: -4px;
 }
 
 .regular-checkbox:checked {
@@ -167,10 +176,9 @@ regular-checkbox:active,
   content: "\25C9";
   font-size: 14px;
   position: absolute;
-  bottom: -2px;
+  bottom: -1.5px;
   left: 2px;
   color: #fbfdfb;
-  text-shadow: #360531;
 }
 
 /*.big-checkbox {
@@ -181,18 +189,6 @@ regular-checkbox:active,
     font-size: 28px;
     left: 6px;
   }*/
-
-.dress {
-}
-.suit {
-  appearance: none;
-}
-.sport-suit {
-}
-.jeans {
-}
-.counts {
-}
 
 select {
   /* background-color: #18af22;
@@ -217,7 +213,7 @@ select {
   border-radius: 3px;
   display: inline-block;
   position: relative;
-  left: 100px;
+  left: 60px;
   bottom: -10px;
   height: 158px;
 }
@@ -247,6 +243,7 @@ select {
 }
 
 .button-item {
+   
   border: 2px solid rgb(0, 0, 0);
   padding: 5px;
   width: 170px;
