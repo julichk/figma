@@ -84,7 +84,7 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: inherit;
+  /*font-weight: inherit;*/
 }
 
 p {
@@ -101,17 +101,23 @@ p {
 /*styles:*/
 
 body {
+  width: 100vw;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-  width: 1440px;
- 
 }
 
 .container {
   width: 970px;
   position: relative;
-  left: 230px;
+  margin: 0 auto;
   border-bottom: 1px solid #000000;
   height: 80px;
 }
@@ -120,11 +126,8 @@ main {
   justify-content: space-between;
   position: relative;
   top: 25px;
-  left: 40px;
-  gap: 40px;
-  width: 525px;
-  height: 30px;
-  margin: 10px auto;
+  max-width: 525px;
+  margin: 10px 235px;
   align-items: center;
 }
 .navbar-item {
@@ -141,58 +144,123 @@ a {
 }
 
 .denis {
-  left: 230px;
+  margin: 0 auto;
+  text-align: center;
   position: relative;
+  width: 970px;
   top: 12px;
+  height: 497px;
 }
 
 h1 {
-  width: 300px;
+  text-align: start;
   height: 60px;
   font-family: "Open Sans";
   font-size: 48px;
   font-weight: 700px;
 }
 
-.denis-img {
+/*.denis-img {
   width: 970px;
   position: relative;
   top: 50px;
-}
+}*/
 
 .about-me {
+  text-align: center;
   position: relative;
-  left: 230px;
-  
-  background-color: #f6f6f6;
-  width: 970px;
+  top: 60px;
+  width: 1440px;
   height: 500px;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.5px;
+  background-color: #e5e5e5;
+}
+
+.about-me-h {
+  position: relative;
+  top: 100px;
+  font-family: "Open Sans";
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46.3px;
 }
 
 .about-me-text {
+  margin: 150px auto;
+  position: relative;
+  width: 480px;
+  height: 216px;
 }
 .about-me-text1 {
 }
 .about-me-text2 {
+  position: relative;
+  top: 30px;
 }
+
+.about-me-text3 {
+  position: relative;
+  top: 60px;
+}
+
+.skills {
+  width: 1440px;
+  position: relative;
+  top: 60px;
+
+}
+
 .skills-heading {
+  margin: 150px auto;
+  text-align: center;
 }
+
+.skills-h {
+  font-family: "Open Sans";
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.skills-title{
+  font-size: 18px;
+  font-weight: 400px;
+  margin: 20px 0 0 0;
+}
+
+
 .product-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 970px;
 }
-.ps {
+
+.product-item:last-child .skills-p{
+  margin-bottom: 74px;
 }
+
+
 .product {
+  text-align: center;
+  width: 170px;
 }
+
+.skills-p {
+   margin: 25px 0 60px;
+}
+
 .vector {
 }
 .rating {
 }
-.ai {
-}
-.ae {
-}
-.figma {
-}
+
 .portfolio {
 }
 .bg {
