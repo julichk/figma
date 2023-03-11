@@ -103,17 +103,7 @@ p {
 body {
   width: 100vw;
 }
-
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-}
-
+/*---Navbar---*/ 
 .container {
   width: 970px;
   position: relative;
@@ -121,6 +111,7 @@ main {
   border-bottom: 1px solid #000000;
   height: 80px;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -129,8 +120,6 @@ main {
   max-width: 525px;
   margin: 10px 235px;
   align-items: center;
-}
-.navbar-item {
 }
 
 a {
@@ -143,6 +132,7 @@ a {
   letter-spacing: 0.02em;
 }
 
+/*--Denis--*/
 .denis {
   margin: 0 auto;
   text-align: center;
@@ -159,13 +149,7 @@ h1 {
   font-size: 48px;
   font-weight: 700px;
 }
-
-/*.denis-img {
-  width: 970px;
-  position: relative;
-  top: 50px;
-}*/
-
+/*--About Denis--*/
 .about-me {
   text-align: center;
   position: relative;
@@ -198,8 +182,7 @@ h1 {
   width: 480px;
   height: 216px;
 }
-.about-me-text1 {
-}
+
 .about-me-text2 {
   position: relative;
   top: 30px;
@@ -210,6 +193,7 @@ h1 {
   top: 60px;
 }
 
+/*--Denis's skills--*/
 .skills {
   width: 1440px;
   position: relative;
@@ -218,7 +202,7 @@ h1 {
 }
 
 .skills-heading {
-  margin: 150px auto;
+  margin: 100px auto;
   text-align: center;
 }
 
@@ -234,7 +218,6 @@ h1 {
   margin: 20px 0 0 0;
 }
 
-
 .product-list {
   display: flex;
   justify-content: space-between;
@@ -243,9 +226,8 @@ h1 {
 }
 
 .product-item:last-child .skills-p{
-  margin-bottom: 74px;
+  margin-bottom: 75px;
 }
-
 
 .product {
   text-align: center;
@@ -253,43 +235,120 @@ h1 {
 }
 
 .skills-p {
-   margin: 25px 0 60px;
+  margin: 25px 0 60px;
 }
 
-.vector {
-}
-.rating {
-}
-
+/*--Portfolio--*/
 .portfolio {
+  position: relative;
+  top: 120px;
+  background-color: #e5e5e5;
+  position: relative;
+  height: 2238px;
+  text-align: center;
 }
-.bg {
+
+.portfolio-p{
+  margin: 0px 0px 170px 0px;
+ height: 40px;
+ font-family: "Open Sans";
+font-size: 34px;
+  font-weight: 700;
+  position: relative;
+  top: 100px;
 }
-.pages {
+
+.online-shop{
+  position: relative;
+  top: -20px;
 }
-.fashion-store {
+
+.portfolio-p2{
+  font-weight: 400px;
+  font-size: 18px;
+  font-family: "Open Sans";
+  line-height: 24.5px;
+  height: 50px;
+  text-align: center;
+  text-decoration: underline;
 }
-.reebok-store {
+
+.portfolio-p2:last-child{
+  margin: 50px 0px 0px 0;
 }
-.braun-landing-page {
+
+/*--Contacts--*/
+footer{
+  margin: 120px 0px 0px 0px;
+  padding: 100px ;
+  height: 590px;
 }
+
 .conacts {
+  text-align: center;
+  max-height: 200px;
 }
-.conacts-heading {
+
+.conacts-heading-h{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  
 }
-.buttons-items {
+
+.conacts-heading-p{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  position: relative;
+  top: 10px;
 }
-.button {
+
+.contacts-items {
+  position: relative;
+  top: 60px;
+  
 }
+button {
+  padding: 10px 20px;
+  max-width: 190px;
+  background-color: #000000;
+  border-radius: 22px;
+  
+}
+
+.button-p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-family: 'Open Sans';
+  color: rgb(255, 255, 255);
+  
+}
+
 .sotial-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px auto;
+  max-width: 370px;
+  
 }
-.in {
-}
-.insta {
-}
-.be {
-}
-.dr {
-}
+
 .contacts-text {
+  position: relative;
+  top:150px;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 }
