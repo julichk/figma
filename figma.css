@@ -103,7 +103,7 @@ p {
 body {
   width: 100vw;
 }
-/*---Navbar---*/ 
+/*---Navbar---*/
 .container {
   width: 970px;
   position: relative;
@@ -161,6 +161,7 @@ h1 {
   font-weight: 400;
   line-height: 24.5px;
   background-color: #e5e5e5;
+  margin: 0px auto;
 }
 
 .about-me-h {
@@ -198,7 +199,7 @@ h1 {
   width: 1440px;
   position: relative;
   top: 60px;
-
+  margin: 0px auto;
 }
 
 .skills-heading {
@@ -212,7 +213,7 @@ h1 {
   font-weight: 700;
 }
 
-.skills-title{
+.skills-title {
   font-size: 18px;
   font-weight: 400px;
   margin: 20px 0 0 0;
@@ -225,7 +226,7 @@ h1 {
   max-width: 970px;
 }
 
-.product-item:last-child .skills-p{
+.product-item:last-child .skills-p {
   margin-bottom: 75px;
 }
 
@@ -248,22 +249,22 @@ h1 {
   text-align: center;
 }
 
-.portfolio-p{
+.portfolio-p {
   margin: 0px 0px 170px 0px;
- height: 40px;
- font-family: "Open Sans";
-font-size: 34px;
+  height: 40px;
+  font-family: "Open Sans";
+  font-size: 34px;
   font-weight: 700;
   position: relative;
   top: 100px;
 }
 
-.online-shop{
+.online-shop {
   position: relative;
   top: -20px;
 }
 
-.portfolio-p2{
+.portfolio-p2 {
   font-weight: 400px;
   font-size: 18px;
   font-family: "Open Sans";
@@ -273,14 +274,14 @@ font-size: 34px;
   text-decoration: underline;
 }
 
-.portfolio-p2:last-child{
+.portfolio-p2:last-child {
   margin: 50px 0px 0px 0;
 }
 
 /*--Contacts--*/
-footer{
+footer {
   margin: 120px 0px 0px 0px;
-  padding: 100px ;
+  padding: 100px;
   height: 590px;
 }
 
@@ -289,18 +290,17 @@ footer{
   max-height: 200px;
 }
 
-.conacts-heading-h{
-  font-family: 'Open Sans';
+.conacts-heading-h {
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 34px;
   line-height: 46px;
   text-align: center;
-  
 }
 
-.conacts-heading-p{
-  font-family: 'Open Sans';
+.conacts-heading-p {
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -313,14 +313,12 @@ footer{
 .contacts-items {
   position: relative;
   top: 60px;
-  
 }
 button {
   padding: 10px 20px;
   max-width: 190px;
   background-color: #000000;
   border-radius: 22px;
-  
 }
 
 .button-p {
@@ -329,9 +327,8 @@ button {
   line-height: 25px;
   text-align: center;
   letter-spacing: 0.1em;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   color: rgb(255, 255, 255);
-  
 }
 
 .sotial-group {
@@ -339,14 +336,13 @@ button {
   justify-content: space-between;
   margin: 25px auto;
   max-width: 370px;
-  
 }
 
 .contacts-text {
   position: relative;
-  top:150px;
+  top: 150px;
   text-align: center;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
