@@ -105,7 +105,6 @@ body {
   background-image: url(./images/bg.avif);
   background-size: 100%;
   background-repeat: no-repeat;
-  
 }
 
 h1 {
@@ -129,7 +128,7 @@ h1 {
   background-color: #ffffff;
   border-radius: 10px;
   position: relative;
-  top: 50px
+  top: 50px;
 }
 
 .check {
@@ -138,7 +137,7 @@ h1 {
 }
 
 .cringe {
-border-radius: 10px;
+  border-radius: 10px;
   margin: 10px auto;
   height: 183px;
   background-color: #ffffff;
@@ -225,7 +224,6 @@ select {
 }
 
 .button-item {
-   
   border: 2px solid rgb(0, 0, 0);
   padding: 5px;
   width: 170px;
