@@ -1,0 +1,60 @@
+.hrestiknolik {
+  max-width: 1440px;
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 250px;
+  text-align: center;
+  font-family: "Roboto";
+}
+
+h2 {
+  color: rgba(70, 163, 255, 1);
+  font-size: 24px;
+  font-weight: 500px;
+}
+
+p {
+  color: rgba(173, 173, 173, 1);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hrestiknolik_item {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: rgba(241, 241, 241, 1);
+}
+
+.hrestik {
+  border: 1px solid rgba(70, 163, 255, 1);
+  background-color: rgba(70, 163, 255, 0.2);
+}
+
+.nolik {
+  border: 1px solid rgba(255, 130, 126, 1);
+  background-color: rgba(255, 130, 126, 0.2);
+}
+
+.hrestik:hover {
+  background-color: rgba(70, 163, 255, 1);
+  transition: ease-in 0.2s;
+}
+
+.nolik:hover {
+  background-color: rgba(255, 130, 126, 1);
+  transition: ease-in 0.2s;
+}
+
+.hrestiknolik_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 364px;
+  height: 364px;
+  gap: 10px;
+  margin: 0 auto;
+}
