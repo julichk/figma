@@ -26,9 +26,9 @@ body {
   margin-left: 4px;
 }
 
-.container{
-border: 2px solid darkgreen;
-padding: 78px 133px 78px 133px;
+.container {
+  border: 2px solid darkgreen;
+  padding: 78px 133px 78px 133px;
 }
 
 .weather_table {
@@ -38,41 +38,56 @@ padding: 78px 133px 78px 133px;
   font-size: 0;
   /*position: relative;
   top: 129px;*/
- 
 }
 
 .weather_tiles_lisbon {
-  max-width: 583px;
   max-height: 147px;
   display: inline-block;
   width: 50%;
   height: 147px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   
 }
 
-.weather_item{
-  color: #FFFFFF;
+.weather_item {
+  color: #ffffff;
   display: inline-block;
-  font-size: 14px
+  /*font-size: 14px;*/
+}
+
+/*.weather_temp {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 22px;
+  display: inline-block;
+  border: 1px solid wheat;
+  
+}*/
+
+.weather_temt_text {
+  display: inline-block;
+  
+}
+
+.weather_temp_icon {
+  width: 47px;
 }
 
 .weather_tiles_paris {
-  max-width: 291.5px;
+  
   max-height: 147px;
   background-color: #33cccc;
   display: inline-block;
   width: 25%;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   height: 147px;
 }
 
 .weather_tiles_belgrad {
-  max-width: 291.5px;
+  
   max-height: 147px;
   background-color: #996699;
   display: inline-block;
   width: 25%;
   height: 147px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
