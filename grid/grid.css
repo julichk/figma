@@ -1,0 +1,49 @@
+.grid {
+    max-width: 1440px;
+    height: 5565px;
+    margin: 0 auto;
+}
+
+.architectural_photography{
+    max-width: 1170px;
+    max-height: 1295px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.architectural_photography_item {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    margin: 0 auto; 
+ 
+}
+
+.architectural_photography_pics{
+    
+}
+
+.pic_item{
+    display: inline-block;
+}
+
+.pic_1,
+pic_3,
+pic_5 {
+  max-width: 370px;
+}
+
+.pic_2,
+.pic_4,
+.pic_6 {
+  max-width: 770px;
+}
+
+.turn1 {
+  display: inline-block;
+}
+
+h2 {
+  background-color: aqua;
+}
