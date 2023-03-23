@@ -56,7 +56,7 @@ pic_5 {
   letter-spacing: 0.05em;
 }*/
 
-.page_content {
+.content {
   max-width: 1200px;
   margin: 120px auto;
 }
@@ -74,17 +74,17 @@ pic_5 {
   font-family: "Delius Unicase";
   font-style: normal;
   text-align: center;
-  margin: 30px 0;
+  margin: 130px 0px 50px 0px;
 }
 
-.grid_container {
+.architectural_photography_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 370px;
   gap: 10px;
 }
 
-.grid_container_item {
+.architectural_photography_container_item {
   border-radius: 20px;
   width: 100%;
   height: 100%;
@@ -183,4 +183,105 @@ p {
   background-repeat: no-repeat;
   grid-column: 2/4;
   max-width: 770px;
+}
+
+.still_life_photography_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr 1fr;*/
+  grid-auto-rows: 370px;
+  gap: 10px;
+}
+
+.still_life_photography_container_item {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 20px 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.pic_st1 {
+  background: linear-gradient(
+      0deg,
+      rgba(36, 31, 36, 1) 0%,
+      rgba(91, 91, 91, 0.45) 35%,
+      rgba(187, 186, 192, 0.26) 100%
+    ),
+    url(./images/pic_st1.png);
+  background-repeat: no-repeat;
+  max-width: 370px;
+}
+
+.pic_st2 {
+  background: linear-gradient(
+      0deg,
+      rgba(36, 31, 36, 1) 0%,
+      rgba(91, 91, 91, 0.45) 35%,
+      rgba(187, 186, 192, 0.26) 100%
+    ),
+    url(./images/pic_st2.png);
+  max-width: 770px;
+  grid-column: 2/4;
+  background-repeat: no-repeat;
+}
+
+.pic_st3 {
+  background: linear-gradient(
+      0deg,
+      rgba(36, 31, 36, 1) 0%,
+      rgba(91, 91, 91, 0.45) 35%,
+      rgba(187, 186, 192, 0.26) 100%
+    ),
+    url(./images/pic_st3.png);
+  grid-column: 1/3;
+  grid-row: 2/4;
+  background-repeat: no-repeat;
+  max-width: 770px;
+}
+
+.pic_st4 {
+  background: linear-gradient(
+      0deg,
+      rgba(36, 31, 36, 1) 0%,
+      rgba(91, 91, 91, 0.45) 35%,
+      rgba(187, 186, 192, 0.26) 100%
+    ),
+    url(./images/pic_st4.png);
+  background-repeat: no-repeat;
+  max-width: 370px;
+  max-height: 770px;
+  grid-row: 2/4;
+}
+
+.pic_st5 {
+  background: linear-gradient(
+      0deg,
+      rgba(36, 31, 36, 1) 0%,
+      rgba(91, 91, 91, 0.45) 35%,
+      rgba(187, 186, 192, 0.26) 100%
+    ),
+    url(./images/pic_st5.png);
+  background-repeat: no-repeat;
+  max-width: 370px;
+  grid-column: 1/3;
+  max-width: 770px;
+}
+
+.pic_st6 {
+  background: linear-gradient(
+      0deg,
+      rgba(36, 31, 36, 1) 0%,
+      rgba(91, 91, 91, 0.45) 35%,
+      rgba(187, 186, 192, 0.26) 100%
+    ),url(./images/pic-st6.png);
+  max-width: 370px;
+  background-repeat: no-repeat;
 }
