@@ -64,6 +64,7 @@
   border-radius: 20px;
 }
 
+/* не знаю що робить в моєму випадку*/
 /*.architectural_photography_container_item__actions__item {
   width: 100%;
   
@@ -75,7 +76,6 @@
 }*/
 
 .architectural_photography_container_item__actions:hover {
-  transition: ease-in-out 0.5s; /*не працює*/
   /*background: linear-gradient(
     0deg,
     rgba(10, 1, 1, 1) 0%,
@@ -88,10 +88,12 @@
     rgba(91, 91, 91, 0.45) 20%,
     rgba(48, 11, 233, 0) 100%
   );
+  transition: ease-in .5s; /*НЕ ПРАЦЮЄ*/
   height: 100%;
   width: 100%;
 }
 
+/* не розумію шо робить*/
 /*.architectural_photography_container_item:hover .architectural_photography_container_item__actions__item {
     opacity: 1;
     background: linear-gradient(
@@ -107,7 +109,7 @@
 }*/
 
 /*.architectural_photography_container_item:hover .architectural_photography_container_item__actions__item:hover {
-    /*background: linear-gradient(
+    background: linear-gradient(
         0deg,
         rgba(36, 31, 36, 1) 0%,
         rgba(91, 91, 91, 0.45) 35%,
