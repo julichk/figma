@@ -15,16 +15,14 @@ body{
   max-width: 1200px;
   margin: 10px auto;
   align-items: center;
-  background-color: darkblue;
   position: sticky;
   top: 0;
   z-index: 2;
+  background-color: #fff;
 }
 
 .sticky {
   height: 200vh;
-  
-  
 }
 
 .language,
@@ -40,9 +38,6 @@ body{
   font-family: "Staatliches";
   font-weight: 400;
   font-size: 22px;
-  background-color: aquamarine;
-  
-
 }
 
 .doc_slash {
@@ -81,9 +76,9 @@ body{
   background-color: #1a1a1a;
 }
 
-.social_media:hover img {
+.social_media:hover  img{
   opacity: 1;
-  /*transition: opacity 1s;*/
+  /*transition: opacity easy-in .2s;*/
   transform: rotateY(180deg);
   transform: rotateX(180deg);
 }
