@@ -1,14 +1,10 @@
-body{
- 
-}
-
 
 .content {
   height: 250vh;
   
 }
 
-/*Header*/
+/*-------------Header------------*/
 .container {
   display: flex;
   justify-content: space-between;
@@ -32,8 +28,6 @@ body{
   display: inline-block;
 }
 
-
-
 .nav {
   font-family: "Staatliches";
   font-weight: 400;
@@ -49,8 +43,8 @@ body{
   font-family: "Tourney";
   font-weight: 600;
 }
-/*Header*/
-/*Main*/
+/*-------------Header--------------*/
+/*-------------Main----------------*/
 .section {
   margin: 20px auto;
   display: grid;
@@ -128,4 +122,4 @@ body{
   
 }*/
 
-/*/Main*/
+/*----------/Main------------*/
