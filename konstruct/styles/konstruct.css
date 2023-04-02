@@ -2,6 +2,11 @@
   height: 250vh;
 }
 
+.main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 /*-------------Header------------*/
 .container {
   display: flex;
@@ -41,94 +46,32 @@
   font-family: "Tourney";
   font-weight: 600;
 }
-/*-------------Header--------------*/
-/*-------------Main----------------*/
-/*.section {
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  /*grid-template-rows: 1fr 1fr 1fr;
-  grid-auto-rows: 270px;
-  gap: 10px;
-  position: relative;
-  z-index: 0;
-  max-width: 1200px;
-  border-top: 2px solid #e6e6e6;
-  border-bottom: 2px solid #e6e6e6;
-  padding: 10px;
+/*-------------/Header--------------*/
+
+/*-----------Who’s using------------*/
+.using_container {
+  max-width: 120px;
 }
 
-.social_media {
-  display: inline-block;
-  background-color: #e6e6e6;
-  position: relative;
-
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+.using_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
 }
 
-.icon3 {
+.line {
+  width: 30px;
+  max-height: 8px;
+  border: 1px solid#1a1a1a;
+  padding: 1px;
   background-color: #1a1a1a;
 }
+/*-----------/Who’s using------------*/
 
-.social_media:hover img {
-  opacity: 1;
-  /*transition: opacity easy-in .2s;
-  transform: rotateY(180deg);
-  transform: rotateX(180deg);
-}
-.social_media img {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  max-width: 270px;
-  max-height: 180px;
-  margin: auto;
-  /*transition: ease-in-out 0.7;
-  -webkit-backface-visibility: hidden; /* Safari 
-  backface-visibility: hidden;
-}
-
-.logos2 {
-  transform: rotateY(180deg) scale(-1);
-}
-
-.social_media:hover {
-  transform: rotateX(180deg);
-  background-color: #1a1a1a;
-  transition: ease-in 1s;
-  /*background-image: url(./facebook_white.svg) no-repeat;*/
-
-/*animation-name: logoss;
-    animation-duration: 1s;
-}
-
-.icon3:hover {
-  transform: rotateX(180deg);
-  background-color: #e6e6e6;
-  transition: all ease-in 0.7s;
-}
-
-/*.logos1 {
-  opacity: 1;
-}
-
-.logos2 {
-  opacity: 0;
-}
-
-
-.logos{
-  text-align: center;
-  background-color: aqua;
- 
-  max-width: 200px;
-  max-height: 40px;
-  
-}*/
-
+/*----------Social medias---------*/
 .section {
   margin: 20px auto;
   display: grid;
@@ -146,7 +89,6 @@
 
 .social_media-container {
   position: relative;
-  
 }
 
 .social_media {
@@ -154,7 +96,7 @@
   background-color: #e6e6e6;
   transform-style: preserve-3d;
   width: 100%;
-  transition: ease-in .8s;
+  transition: ease-in 0.8s;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -172,16 +114,13 @@
   max-width: 270px;
   max-height: 180px;
   margin: auto;
-  /*-webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
 
 .logos2 {
   transform: rotateY(180deg) scale(-1);
   transform: rotateX(180deg);
-}
-
-.logos1 {
 }
 
 .icon3 {
@@ -191,37 +130,10 @@
 .social_media-container:hover .social_media {
   transform: rotateX(180deg);
   background-color: #1a1a1a;
-  
 }
 
-.social_media-container:hover .icon3{
+.social_media-container:hover .icon3 {
   transform: rotateX(180deg);
   background-color: #e6e6e6;
 }
-
-  
-  /*background-image: url(./facebook_white.svg) no-repeat;*/
-
-  /*animation-name: logoss;
-    animation-duration: 1s;*/
-
-
-/*.icon3:hover {
-  transform: rotateX(180deg);
-  background-color: #e6e6e6;
-  transition: all ease-in 0.7s;
-  
-}*/
-
-/*.logos{
-  text-align: center;
-  background-color: aqua;
- 
-  max-width: 200px;
-  max-height: 40px;
-  
-}*/
-
-/*----------/Main------------*/
-
-/*----------/Main------------*/
+/*----------/Social medias---------*/
