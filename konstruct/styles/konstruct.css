@@ -89,6 +89,8 @@
 
 .social_media-container {
   position: relative;
+  width: 100%;
+ 
 }
 
 .social_media {
@@ -96,6 +98,7 @@
   background-color: #e6e6e6;
   transform-style: preserve-3d;
   width: 100%;
+  min-width: 200px;
   transition: ease-in 0.8s;
   position: absolute;
   top: 0;
@@ -121,6 +124,11 @@
 .logos2 {
   transform: rotateY(180deg) scale(-1);
   transform: rotateX(180deg);
+  width: 100%;
+}
+
+.logos1 {
+  width: 100%;
 }
 
 .icon3 {
@@ -138,17 +146,20 @@
 }
 /*----------/Social medias---------*/
 /*----------Media's rules---------*/
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 1200px) {
   .section {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    max-width: 800px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 805px) {
   .section {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    max-width: 400px;
   }
 }
 /*----------/Media's rules---------*/
