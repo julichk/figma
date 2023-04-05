@@ -7,8 +7,6 @@
   max-width: 1200px;
 }
 
-
-
 /*-------------Header------------*/
 .container {
   display: flex;
@@ -24,7 +22,6 @@
 
 .sticky {
   height: 200vh;
-  
 }
 
 .language,
@@ -50,7 +47,7 @@
   font-weight: 600;
 }
 
-.hide-desktop{
+.hide-desktop {
   display: none;
 }
 
@@ -61,12 +58,15 @@
 }
 .hamburger { padding: 0; }*/
 
-.is-active ~ .navigation-mobile {
+/*.is-active ~ .navigation-mobile {
+  display: flex;
+}*/
+.burger-control:has(.is-active) ~ .navigation-mobile {
   display: flex;
 }
 
 .navigation-mobile {
- display: none;
+  display: none;
   max-width: 370px;
   padding: 8px;
   position: absolute;
@@ -74,10 +74,10 @@
   top: calc(100% + 5px);
   border: 1px solid #0000003a;
   background: #fffefe;
-  box-shadow: 0px 2px 4px rgba(31, 41, 55, 0.06), 0px 4px 6px rgba(31, 41, 55, 0.1);
+  box-shadow: 0px 2px 4px rgba(31, 41, 55, 0.06),
+    0px 4px 6px rgba(31, 41, 55, 0.1);
   border-radius: 4px;
 }
-
 
 /*-------------/Header--------------*/
 
@@ -95,7 +95,7 @@
   font-size: 16px;
   gap: 3px;
   line-height: 20px;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .line {
@@ -104,7 +104,6 @@
   border: 1px solid#1a1a1a;
   padding: 1px;
   background-color: #1a1a1a;
-  
 }
 /*-----------/Who’s using------------*/
 
@@ -157,8 +156,6 @@
   backface-visibility: hidden;
 }
 
-
-
 .logos2 {
   transform: rotateY(180deg) scale(-1);
   transform: rotateX(180deg);
@@ -182,8 +179,6 @@
   transform: rotateX(180deg);
   background-color: #e6e6e6;
 }
-
-
 
 /*----------/Social medias---------*/
 /*----------Media's rules---------*/
@@ -217,25 +212,23 @@
     background-color: aqua;
   }*/
 
-  .sticky{
+  .sticky {
     height: 550vh;
   }
 
   .container {
     justify-content: space-between;
-    
   }
 
-  .burger-control{
+  .burger-control {
     display: block;
     background-color: rgb(0, 255, 89);
     position: relative;
-    
   }
 
-  .hide-mobile{
+  .hide-mobile {
     display: none;
-    }
+  }
 
   .hamburger-inner {
     top: 50%;
@@ -243,10 +236,8 @@
     margin-top: -2px;
   }
 
-  
-
   .hamburger--squeeze .hamburger-inner:before {
-    transition: top 75ms ease .12s,opacity 75ms ease;
+    transition: top 75ms ease 0.12s, opacity 75ms ease;
   }
 
   .hamburger-inner:before {
@@ -261,24 +252,27 @@
     top: 50%;
   }
 
-  .hamburger-inner:after, .hamburger-inner:before {
+  .hamburger-inner:after,
+  .hamburger-inner:before {
     display: block;
     content: "";
   }
-  
-  .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+
+  .hamburger-inner,
+  .hamburger-inner:after,
+  .hamburger-inner:before {
     position: absolute;
     width: 40px;
     height: 3px;
     transition-timing-function: ease;
-    transition-duration: .15s;
+    transition-duration: 0.15s;
     transition-property: transform;
     border-radius: 4px;
-    background-color: #ee900d;    
+    background-color: #1a1a1a;
   }
-    
+
   .hamburger--squeeze .hamburger-inner {
-    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
     transition-duration: 75ms;
   }
 
@@ -289,8 +283,8 @@
     margin: 0;
     cursor: pointer;
     transition-timing-function: linear;
-    transition-duration: .15s;
-    transition-property: opacity,filter;
+    transition-duration: 0.15s;
+    transition-property: opacity, filter;
     text-transform: none;
     color: inherit;
     border: 0;
@@ -298,20 +292,21 @@
     padding: 0;
   }
   .hamburger--squeeze.is-active .hamburger-inner {
-    transition-delay: .12s;
-    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transition-delay: 0.12s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: rotate(45deg);
   }
-  
+
   .hamburger--squeeze.is-active .hamburger-inner:before {
     top: 0;
-    transition: top 75ms ease,opacity 75ms ease .12s;
+    transition: top 75ms ease, opacity 75ms ease 0.12s;
     opacity: 0;
   }
-    
+
   .hamburger--squeeze.is-active .hamburger-inner:after {
     bottom: 0;
-    transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+    transition: bottom 75ms ease,
+      transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
     transform: rotate(-90deg);
   }
 
@@ -319,8 +314,6 @@
     margin: 0 auto;
   }
 
-  
-  
   /*.using_container {
     padding: 0 15px;
     max-width: 150px;
@@ -339,8 +332,5 @@
     }*/
 }
 
-
-
-
-
 /*----------/Media's rules---------*/
+/*------Check-box---------*/
