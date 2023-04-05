@@ -9,8 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&family=Staatliches&family=Tourney:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/konstruct.css" />
-    <link rel="stylesheet" href="./scss/index.scss">
-    <link rel="stylesheet" href="./scss/konstruct.scss">
+    
     
     <title>Konstruct</title>
   </head>
@@ -18,17 +17,57 @@
     <div class="content">
       <div class="sticky">
             <!--<header>-->
+              
           <div class="container">
-            <div class="nav">
+            
+            <div class="nav hide-mobile">
               <p class="language">ENG</p>
               <p class="doc">Documentation</p>
               <p class="doc doc_slash">/</p>
               <p class="doc">Who's using</p>
             </div>
+            <div class="burger-control hide-desktop">
+              <div class="hamburger hamburger--squeeze js-hamburger is-active">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            </div>
+            <div class="nav navigation-mobile">
+              <p class="language">ENG</p>
+              <p class="doc">Documentation</p>
+              <p class="doc doc_slash">/</p>
+              <p class="doc">Who's using</p>
+            </div>
+            
             <img class="logo" src="./images/konstruct_logo.svg" alt="logo" />
           </div>
+          
+          <!--<div class="burger-control">
+            <div class="hamburger hamburger--squeeze js-hamburger">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
+            --<nav class="navigation navigation-mobile">
+              <ul class="navigation__list">
+                <li class="navigation__list-item">
+                  <a class="navigation__list-item-link" href="./index.html">Account</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a class="navigation__list-item-link" href="./profile.html">Profile</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a class="navigation__list-item-link" href="">Pricing</a>
+                </li>
+                <li class="navigation__list-item">
+                  <a class="navigation__list-item-link" href="">Resources</a>
+                </li>
+              </ul>
+            </nav>
+          </div>-->
             <!--</header>-->
-      <main class="main">
+        <main class="main">
         <!--Who’s using-->
         <div class="using_container">
           <div class="using_item">
@@ -88,8 +127,9 @@
           </div>
         </div>
         </div>
-      </main>
+        </main>
       </div>
     </div>
+    <script src="./scripts/konstruct.js"></script>
   </body>
 </html>
