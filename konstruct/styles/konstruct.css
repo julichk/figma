@@ -51,16 +51,6 @@
   display: none;
 }
 
-/*.burger-control {
-  display: none;
-  position: relative;
-  background-color: aqua;
-}
-.hamburger { padding: 0; }*/
-
-/*.is-active ~ .navigation-mobile {
-  display: flex;
-}*/
 .burger-control:has(.is-active) ~ .navigation-mobile {
   display: flex;
 }
@@ -70,7 +60,6 @@
   max-width: 370px;
   padding: 8px;
   position: absolute;
-  
   top: calc(100% + 5px);
   border: 1px solid #0000003a;
   background: #fffefe;
@@ -207,11 +196,6 @@
     max-width: 400px;
   }
 
-  /*.nav {
-    display: none;
-    background-color: aqua;
-  }*/
-
   .sticky {
     height: 550vh;
   }
@@ -222,7 +206,6 @@
 
   .burger-control {
     display: block;
-
     position: relative;
   }
 
@@ -230,7 +213,11 @@
     display: none;
   }
 
-  .hamburger-inner {
+}
+
+/*----------/Media's rules---------*/
+/*
+.hamburger-inner {
     top: 50%;
     display: block;
     margin-top: -2px;
@@ -241,14 +228,6 @@
   }
 
   .hamburger-inner:before {
-    top: 50%;
-  }
-
-  .hamburger-inner2:before {
-    top: 50%;
-  }
-
-  .hamburger-inner3:before {
     top: 50%;
   }
 
@@ -309,26 +288,4 @@
       transform 75ms cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
     transform: rotate(-90deg);
   }
-
-  
-
-  /*.using_container {
-    padding: 0 15px;
-    max-width: 150px;
-
-    margin: 0 138.5px;
-  }
-
-  
-
-  .hide-mobile {
-      display: none;
-    }
-
-  .hide-desktop {
-    display: none;
-    }*/
-}
-
-/*----------/Media's rules---------*/
-/*------Check-box---------*/
+*/
