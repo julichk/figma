@@ -70,7 +70,7 @@
   max-width: 370px;
   padding: 8px;
   position: absolute;
-  left: 0;
+  
   top: calc(100% + 5px);
   border: 1px solid #0000003a;
   background: #fffefe;
@@ -310,9 +310,7 @@
     transform: rotate(-90deg);
   }
 
-  .using_container {
-    margin: 0 auto;
-  }
+  
 
   /*.using_container {
     padding: 0 15px;
