@@ -1,0 +1,104 @@
+.content {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  margin: 0 135px;
+}
+
+.header {
+  background-color: rgb(10, 201, 150);
+}
+.header_navigation {
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.header_navigation_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.header_navigation_list_item {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+}
+.header_navigation_list_item_ai {
+  font-family: "Red Hat Display";
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  background-color: rgba(38, 255, 0, 0.652);
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 570px;
+  max-height: 455px;
+  background-color: antiquewhite;
+  gap: 50px;
+  margin-top: 45px;
+}
+.section_header {
+  font-family: "Red Hat Display";
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+}
+.section_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+.img {
+  max-width: 1170px;
+  max-height: 500px;
+  margin-bottom: 45px;
+}
+
+.footer {
+  height: 200px;
+  width: 100%;
+  background-color: rgb(88, 210, 23);
+}
