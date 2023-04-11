@@ -104,6 +104,7 @@ body{
   opacity: .6;
 }
 /* /Avatar */
+
 /*Main Form*/
 
 .sign_up{
@@ -172,6 +173,12 @@ body{
   display: flex;
   flex-direction: column;
   gap: 7px;
+
+  &_inner{
+    opacity: 0.6;
+    color: #545454;
+    font-family: 'Inter';
+  }
 }
 
 .sign_up_form_select_icon{
@@ -179,17 +186,9 @@ body{
   top: 36px;
   right: 10px;
 }
-
-/*.sign_up_form_select{
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: 1px solid #E4E4E4;
-  
-  &:focus{
-    border: 1px solid #30b4e3;
-  }
-}*/
 /*/Select*/
+
+/*/Main Form*/
 
 /*Bottom*/
 .button{
