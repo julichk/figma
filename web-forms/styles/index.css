@@ -1,0 +1,240 @@
+body {
+  background-color: rgba(0, 0, 0, 0.1529411765);
+}
+
+.content {
+  max-width: 100%;
+  height: 100%;
+}
+
+.form_header {
+  margin: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+}
+
+.content-form {
+  background-color: #ffffff;
+  max-width: 570px;
+  margin: 30px auto;
+  border: 1px solid #545454;
+  border-radius: 6px;
+}
+
+/* Avatar */
+.first-form {
+  max-width: 570px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  margin-left: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 500px;
+}
+
+.form-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+}
+
+.form-avatar_inner {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(124, 204, 241, 0.339);
+}
+.form-avatar_inner_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.form-avatar_basic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+.form-avatar_basic_upload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 9px;
+}
+.form-avatar_basic_upload_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 7px;
+  width: 100%;
+  position: relative;
+}
+
+.form-avatar_basic_upload_input_tag {
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.form-avatar_basic_upload_input_icon, .span {
+  opacity: 0.6;
+}
+
+.form-avatar_basic_upload_delete {
+  position: relative;
+  top: 7px;
+  opacity: 0.6;
+}
+
+/* /Avatar */
+/*Main Form*/
+.sign_up {
+  width: 500px;
+  background-color: #007BFF;
+}
+
+.sign_up_form {
+  max-width: 570px;
+  border-radius: 6px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 12px 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 36px 36px 16px 36px;
+  -webkit-column-gap: 12px;
+     -moz-column-gap: 12px;
+          column-gap: 12px;
+  row-gap: 20px;
+  background-color: #ffffff;
+}
+.sign_up_form_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+}
+.sign_up_form_input_inner {
+  border-radius: 6px;
+  border: 1px solid #E4E4E4;
+  padding: 8px 10px;
+}
+.sign_up_form_input_inner:focus {
+  border: 1px solid #30b4e3;
+}
+.sign_up_form_input_label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+
+/*Select*/
+.sign_up_form_select_container {
+  position: relative;
+}
+
+.sign_up_form_select_inner {
+  border-radius: 6px;
+  border: 1px solid #E4E4E4;
+  padding: 8px 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+.sign_up_form_select_inner:focus {
+  border: 1px solid #30b4e3;
+}
+
+.sign_up_form_select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 7px;
+}
+
+.sign_up_form_select_icon {
+  position: absolute;
+  top: 36px;
+  right: 10px;
+}
+
+/*.sign_up_form_select{
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #E4E4E4;
+
+  &:focus{
+    border: 1px solid #30b4e3;
+  }
+}*/
+/*/Select*/
+/*Bottom*/
+.button {
+  background: #007BFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 8px 10px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+}
+
+/*/Bottom*/

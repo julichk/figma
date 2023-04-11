@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="content">
+  <div class="content-form">
+    <div class="form_header">
+      <h1>Profile</h1>
+    </div>
+    <!-----------Avatar------------>
+    <div class="first-form">
+      <div class="full-width form-avatar">
+        <div class="form-avatar_inner">
+            <img class="form-avatar_inner_img" src="https://picsum.photos/200" alt="#">
+        </div>
+        <div class="form-avatar_basic">
+          <div class="form-avatar_basic_upload">
+            <div class="form-avatar_basic_upload_input">
+              <input class="form-avatar_basic_upload_input_tag" type="file" accept=".jpg">
+                <svg class="form-avatar_basic_upload_input_icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <circle cx="12" cy="12" r="3.2"></circle>
+                  <path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z">
+                  </path>
+                </svg>
+            </div>
+              <span class="span">Up to 1 MB (300x300 px)</span>
+          </div>
+          <button class="form-avatar_basic_upload_delete">
+            <svg class="form-avatar_basic_upload_delete_icon" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-----------/Avatar------------>
+      <!-----------Sign Up------------> 
+    </div>
+    <!--<div class="sign_up">-->
+      <form class="sign_up_form">
+        <div class="sign_up_form_input">
+          <label class="sign_up_form_input_label" for="">Name</label>
+          <input class="sign_up_form_input_inner" type="text" placeholder="Name">
+        </div>
+        <div class="sign_up_form_input">
+          <label class="sign_up_form_input_label" for="">E-mail</label>
+          <input class="sign_up_form_input_inner" type="text" placeholder="E-mail">
+        </div>
+        <div class="sign_up_form_select_container"><!--SELECT-->
+          
+          <div class="sign_up_form_select">
+            <span class="sign_up_form_input_label" >Country</span>
+            <select name="select" class="sign_up_form_select_inner">
+              <option value="value1">Ukraine</option>
+              <option value="value2">Poland</option>
+              <option value="value3">UK</option>
+              <option value="#" selected> Select</option>
+            </select>
+            <img class="sign_up_form_select_icon" src="./images/arrows.svg" alt="#">
+          </div>
+          
+        </div><!--/SELECT-->
+        <div class="sign_up_form_input">
+          <label class="sign_up_form_input_label" for="">City</label>
+          <input class="sign_up_form_input_inner" type="text">
+        </div>
+        <div class="sign_up_form_input">
+          <label class="sign_up_form_input_label" for="">Zip Code</label>
+          <input class="sign_up_form_input_inner" type="text" >
+        </div>
+        <div class="sign_up_form_input">
+          <label class="sign_up_form_input_label" for="">Phone Number</label>
+          <input class="sign_up_form_input_inner" type="text">
+        </div>
+        <button class="button">
+          Sign Up
+        </button>
+      </form>
+    <!--</div>-->
+    <!-----------/Sign Up------------>
+  </div>
+</div>
+</body>
+</html>
