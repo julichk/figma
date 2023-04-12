@@ -145,6 +145,14 @@ p {
   width: 100%;
 }
 
+.chapter {
+    display: inline-block;
+    background-color: aqua;
+    margin: auto;
+}
+
+
+
 .pic2 {
   background: url(./images/pic2.png);
   max-width: 770px;

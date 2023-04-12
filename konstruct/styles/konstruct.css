@@ -47,15 +47,17 @@
   font-weight: 600;
 }
 
-.hide-desktop { /*це хрестик, який не видно на вилоку екрані*/
+.hide-desktop {
+  /*це хрестик, який не видно на вилоку екрані*/
   display: none;
 }
 
-.burger-control:has(.is-active) ~ .navigation-mobile { 
+.burger-control:has(.is-active) ~ .navigation-mobile {
   display: flex;
 }
 
-.navigation-mobile { /*мобільне меню ховаю на великому екрані*/
+.navigation-mobile {
+  /*мобільне меню ховаю на великому екрані*/
   display: none;
   max-width: 370px;
   padding: 8px;
@@ -67,7 +69,6 @@
     0px 4px 6px rgba(31, 41, 55, 0.1);
   border-radius: 4px;
 }
-
 
 /*-------------/Header--------------*/
 
@@ -205,12 +206,14 @@
     justify-content: space-between;
   }
 
-  .burger-control { /*поява хрестика*/
+  .burger-control {
+    /*поява хрестика*/
     display: block;
     position: relative;
   }
 
-  .hide-mobile { /*ховаю основне меню*/
+  .hide-mobile {
+    /*ховаю основне меню*/
     display: none;
   }
 }

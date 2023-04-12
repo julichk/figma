@@ -117,7 +117,8 @@ body {
   right: 0;
 }
 
-.form-avatar_basic_upload_input_icon, .span {
+.form-avatar_basic_upload_input_icon,
+.span {
   opacity: 0.6;
 }
 
@@ -131,7 +132,7 @@ body {
 /*Main Form*/
 .sign_up {
   width: 500px;
-  background-color: #007BFF;
+  background-color: #007bff;
 }
 
 .sign_up_form {
@@ -160,7 +161,7 @@ body {
 }
 .sign_up_form_input_inner {
   border-radius: 6px;
-  border: 1px solid #E4E4E4;
+  border: 1px solid #e4e4e4;
   padding: 8px 10px;
 }
 .sign_up_form_input_inner:focus {
@@ -183,7 +184,7 @@ body {
 
 .sign_up_form_select_inner {
   border-radius: 6px;
-  border: 1px solid #E4E4E4;
+  border: 1px solid #e4e4e4;
   padding: 8px 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -220,8 +221,8 @@ body {
 /*/Main Form*/
 /*Bottom*/
 .button {
-  background: #007BFF;
-  border: 1px solid #E4E4E4;
+  background: #007bff;
+  border: 1px solid #e4e4e4;
   border-radius: 6px;
   font-family: "Roboto";
   font-weight: 500;
@@ -230,7 +231,7 @@ body {
   padding: 8px 10px;
   text-align: center;
   letter-spacing: -0.1px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*/Bottom*/

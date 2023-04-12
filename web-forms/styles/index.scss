@@ -1,15 +1,15 @@
-body{
+body {
   background-color: #00000027;
 }
 
-.content{
+.content {
   max-width: 100%;
   height: 100%;
 }
 
-.form_header{
+.form_header {
   margin: 20px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -17,16 +17,15 @@ body{
   letter-spacing: -0.4px;
 }
 
-.content-form{
+.content-form {
   background-color: #ffffff;
   max-width: 570px;
   margin: 30px auto;
   border: 1px solid #545454;
   border-radius: 6px;
-  
 }
 /* Avatar */
-.first-form{
+.first-form {
   max-width: 570px;
   border-radius: 6px;
   background-color: #ffffff;
@@ -34,43 +33,41 @@ body{
   text-align: center;
   display: flex;
   justify-content: flex-start;
-  
 }
 
-.form-avatar{
+.form-avatar {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
 }
 
-.form-avatar_inner{
+.form-avatar_inner {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   overflow: hidden;
   background-color: rgba(124, 204, 241, 0.339);
 
-  &_img{
+  &_img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    
   }
 }
 
-.form-avatar_basic{
+.form-avatar_basic {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 
-  &_upload{
+  &_upload {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 9px;
 
-    &_input{
+    &_input {
       display: flex;
       align-items: center;
       justify-content: flex-end;
@@ -84,7 +81,7 @@ body{
   }
 }
 
-.form-avatar_basic_upload_input_tag{
+.form-avatar_basic_upload_input_tag {
   position: absolute;
   opacity: 0;
   z-index: 2;
@@ -94,25 +91,26 @@ body{
   right: 0;
 }
 
-.form-avatar_basic_upload_input_icon, .span{
-  opacity: .6;
+.form-avatar_basic_upload_input_icon,
+.span {
+  opacity: 0.6;
 }
 
-.form-avatar_basic_upload_delete{
+.form-avatar_basic_upload_delete {
   position: relative;
   top: 7px;
-  opacity: .6;
+  opacity: 0.6;
 }
 /* /Avatar */
 
 /*Main Form*/
 
-.sign_up{
+.sign_up {
   width: 500px;
-  background-color: #007BFF;
+  background-color: #007bff;
 }
 
-.sign_up_form{
+.sign_up_form {
   max-width: 570px;
   border-radius: 6px;
   display: grid;
@@ -122,25 +120,23 @@ body{
   row-gap: 20px;
   background-color: #ffffff;
 
-  
-
-  &_input{
+  &_input {
     display: flex;
     flex-direction: column;
     gap: 7px;
 
-    &_inner{
+    &_inner {
       border-radius: 6px;
-      border: 1px solid #E4E4E4;
+      border: 1px solid #e4e4e4;
       padding: 8px 10px;
 
-      &:focus{
+      &:focus {
         border: 1px solid #30b4e3;
       }
     }
 
-    &_label{
-      font-family: 'Roboto';
+    &_label {
+      font-family: "Roboto";
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
@@ -153,37 +149,37 @@ body{
 
 /*Select*/
 
-.sign_up_form_select_container{
+.sign_up_form_select_container {
   position: relative;
 }
 
-.sign_up_form_select_inner{
+.sign_up_form_select_inner {
   border-radius: 6px;
-  border: 1px solid #E4E4E4;
+  border: 1px solid #e4e4e4;
   padding: 8px 10px;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: '';
+  text-overflow: "";
 
-  &:focus{
+  &:focus {
     border: 1px solid #30b4e3;
   }
 }
 
-.sign_up_form_select{
+.sign_up_form_select {
   display: flex;
   flex-direction: column;
   gap: 7px;
 
-  &_inner{
+  &_inner {
     opacity: 0.6;
     color: #545454;
-    font-family: 'Inter';
+    font-family: "Inter";
   }
 }
 
-.sign_up_form_select_icon{
+.sign_up_form_select_icon {
   position: absolute;
   top: 36px;
   right: 10px;
@@ -193,17 +189,17 @@ body{
 /*/Main Form*/
 
 /*Bottom*/
-.button{
-  background: #007BFF;
-  border: 1px solid #E4E4E4;
+.button {
+  background: #007bff;
+  border: 1px solid #e4e4e4;
   border-radius: 6px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
   padding: 8px 10px;
   text-align: center;
   letter-spacing: -0.1px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 /*/Bottom*/
