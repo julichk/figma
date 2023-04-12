@@ -10,6 +10,7 @@
   background: url("../assets/first-screen-image.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .header_container_title {
   width: 530px;
@@ -34,10 +35,10 @@
   font-weight: 400;
   font-size: 44px;
   line-height: 52px;
-  color: #262A3F;
+  color: #262a3f;
 }
 .header_container_title_header_green {
-  color: #85BBB1;
+  color: #85bbb1;
 }
 .header_container_title_text {
   font-family: "Lato";
@@ -45,7 +46,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  color: #262A3F;
+  color: #262a3f;
   margin: 20px 0 50px 0;
   max-width: 439px;
 }
@@ -59,7 +60,7 @@
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.08em;
-  color: #F1897B;
+  color: #f1897b;
 }
 .header_container_title_link_marker {
   width: 110px;
@@ -67,7 +68,7 @@
   position: absolute;
   bottom: -4px;
   right: -7px;
-  background-color: #F1897B;
+  background-color: #f1897b;
   opacity: 0.3;
 }
 
@@ -108,7 +109,7 @@
   font-size: 14px;
   line-height: 24px;
   text-decoration: none;
-  color: #262A3F;
+  color: #262a3f;
   margin-right: 30px;
 }
 .header_line_nav_link:last-child {
@@ -116,7 +117,7 @@
 }
 
 .header_line_nav_link:hover {
-  border-bottom: 2px solid #F1897B;
+  border-bottom: 2px solid #f1897b;
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
 }
