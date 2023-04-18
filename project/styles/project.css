@@ -133,7 +133,7 @@
 /*  /Header */
 /*   Main   */
 .main {
-  height: 250vh;
+  height: 850vh;
   width: 100%;
   background-color: #b9c8c5;
   /*       info     */
@@ -285,7 +285,7 @@
 /*       benefits     */
 .benefits {
   max-width: 100%;
-  height: 670px;
+  min-height: 670px;
   padding: 0 135px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,7 +296,7 @@
 }
 .benefits_conteiner {
   width: 1770px;
-  height: 650px;
+  min-height: 650px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 30px 1fr;
@@ -306,6 +306,7 @@
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  background-color: #e64f3a;
 }
 .benefits_conteiner > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -324,8 +325,8 @@
   -ms-grid-column: 3;
 }
 .benefits_conteiner_block {
-  border-top: 1px solid #E4E4E4;
-  padding: 50px 0 120px 0;
+  border-top: 1px solid #e4e4e4;
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,6 +355,69 @@
 }
 
 /*      /benefits     */
+/*     quote      */
+.quote {
+  max-width: 100%;
+  height: 600px;
+  padding: 0 135px;
+  background-color: rgb(127, 255, 212);
+}
+.quote_conteiner {
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 600px;
+  background-image: url(../assets/quote-background.png);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 101px 100px 101px;
+}
+
+.quote_conteiner_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 230px;
+  position: relative;
+  max-height: 550px;
+}
+.quote_conteiner_block_picture {
+  max-width: 100px;
+  position: absolute;
+}
+.quote_conteiner_block_item {
+  max-width: 710px;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  margin-left: -40px;
+  margin-top: 30px;
+}
+.quote_conteiner_block_item_text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+.quote_conteiner_block_item_autor {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+}
+
+/*      /quote      */
 /*   /Main   */
 /*.content_bg{
   max-width: 1440px;

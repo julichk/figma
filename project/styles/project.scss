@@ -128,7 +128,7 @@
 /*  /Header */
 /*   Main   */
 .main{
-  height: 250vh;
+  height: 850vh;
   width: 100%;
   background-color: #b9c8c5;
 
@@ -270,7 +270,7 @@
 /*       benefits     */
 .benefits{
   max-width: 100%;
-  height: 670px;
+  min-height: 670px;
   padding: 0 135px ;
   display: flex;
   justify-content: center;
@@ -278,15 +278,16 @@
 
   &_conteiner{
     width: 1770px;
-    height: 650px;
+    min-height: 650px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
+    background-color: #e64f3a;
     
     &_block{
-      border-top: 1px solid #E4E4E4;
-      padding: 50px 0 120px 0;
+      border-top: 1px solid #e4e4e4;
+      padding: 50px ;
       display: flex;
       flex-direction: column;
       gap: 30px;
@@ -308,11 +309,77 @@
         line-height: 26px;
         color: #262A3F;
         opacity: 0.8;
+        
       }
     }
   }
 }
 /*      /benefits     */
+/*     quote      */ 
+.quote{
+  max-width: 100%;
+  height: 600px;
+  padding: 0 135px ;
+  background-color: rgb(127, 255, 212);
+  
+
+  &_conteiner{
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 600px;
+    background-image: url(../assets/quote-background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 101px 100px 101px;
+  }
+}
+
+.quote_conteiner_block{
+  display: flex;
+  min-height: 230px;
+  position: relative;
+  max-height: 550px;
+
+
+  &_picture{
+    max-width: 100px;
+    position: absolute;
+    
+    &_img{
+    }
+  }
+
+  &_item{
+    max-width: 710px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: -40px;
+    margin-top: 30px;
+
+    &_text{
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 46px;
+      letter-spacing: 0.04em;
+      color: #FFFFFF;
+    }
+  
+    &_autor{
+      font-family: 'Playfair Display';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.08em;
+      color: #FFFFFF;
+    }
+  }
+}
+/*      /quote      */ 
 
 /*   /Main   */
 /*.content_bg{
