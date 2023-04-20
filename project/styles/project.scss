@@ -6,6 +6,8 @@
   background-color: #F1897B;
 }*/
 
+/*  НА 830-840px РОБИТИ ТАБЛЕТ*/
+
 .header {
 }
 
@@ -136,9 +138,8 @@
 
   &_container{
     width: 100%;
-    height: 670px;
+    min-height: 670px;
     position: relative;
-    /*margin: 0 135px;*/
     top: -75px;
     background-color: #e64f3a;
     display: flex;
@@ -146,7 +147,11 @@
     padding: 0 135px;
 
     &_picture{
-      max-width: 570px;
+      width: 570px;
+      height: 670px;
+      background: url(../assets/statistic-image.png);
+      background-size: cover;
+      
       
 
       &_img{
@@ -155,15 +160,15 @@
     }
 
     &_info{
-      width: 770px;
-      height: 580px;
-      /*position: absolute;*/
-      z-index: 2;
+      max-width: 770px;
+      min-height: 580px;
+      z-index: 3;
       left: 400px;
       top: 45px;
       background: #FFFFFF;
       opacity: 0.9;
       display: flex;
+      gap: 56px;
       padding: 45px 0 45px 87px; //17 0 17 87 - media 940px
       justify-content: space-between;
       margin-left: -170px;
@@ -195,6 +200,7 @@
   display: flex;
   flex-direction: column;
   max-width: 320px;
+  margin: 0 auto;
   gap: 40px;
 
 
@@ -245,6 +251,9 @@
   max-width: 400px;
   height: 390px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &_item{
     display: flex;
@@ -262,8 +271,6 @@
 }
 
 .info-button{
-  position: absolute;
-  bottom: 0;
 }
 /*       /info      */
 
@@ -380,6 +387,66 @@
   }
 }
 /*      /quote      */ 
+/*   video  */
+.video {
+  max-width: 100%;
+  height: 650px;
+  padding: 20px 135px;
+  background-color: rgb(69, 77, 39);
+  display: flex;
+  justify-content: center;
+
+  &_conteiner {
+    border: 1px solid #E4E4E4;
+    border-radius: 32px;
+    max-width: 970px;
+    min-width: 820px;
+    min-height: 601px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 31px 14px 31px 8px;
+
+    &_tablet {
+      width: 95%;
+      max-width: 100%;
+      height: 539px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &_item {
+        &:first-child {
+          max-width: 13px;
+          max-height: 13px;
+          min-width: 9px;
+          min-height: 9px;
+          border: 1px solid #E4E4E4;
+          border-radius: 32px;
+        }
+
+        &:nth-child(2) {
+          background: url(../assets/screensaver-video.png);
+          width: 870px;
+          height: 539px;
+        }
+
+        &:last-child {
+          border: 1px solid #E4E4E4;
+          border-radius: 32px;
+          max-width: 35px;
+          min-width: 26px;
+          max-height: 35px;
+          min-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*  /video  */
 
 /*   /Main   */
 /*.content_bg{
