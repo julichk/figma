@@ -429,6 +429,9 @@
           background: url(../assets/screensaver-video.png);
           width: 870px;
           height: 539px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         &:last-child {
@@ -439,9 +442,18 @@
           max-height: 35px;
           min-height: 26px;
         }
+
+        
       }
     }
   }
+}
+
+.video_conteiner_tablet_item_link{
+  width: 120px;
+  height: 120px;
+  background-color: blueviolet;
+  background: url(../assets/icon\ play.svg);
 }
 
 
