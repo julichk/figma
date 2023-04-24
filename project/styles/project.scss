@@ -57,13 +57,16 @@
       width: 115px;
       height: 20px;
       position: relative;
+      
 
       &:hover &_marker {
         background-color: #e64f3a;
+        transition: ease-in-out .5s;
       }
 
       &:hover &_text {
         color: #e64f3a;
+        transition: ease-in-out .5s;
       }
 
       &_text {
@@ -145,6 +148,7 @@
     display: flex;
     align-items: center;
     padding: 0 135px;
+    justify-content: center;
 
     &_picture{
       width: 570px;
@@ -235,7 +239,6 @@
     height: 2px;
     background-color: #85bbb1;
   }
-  
   
 }
 
@@ -390,17 +393,26 @@
 /*   video  */
 .video {
   max-width: 100%;
-  height: 650px;
+  height: 777px;
   padding: 20px 135px;
   background-color: rgb(69, 77, 39);
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  
+}
+
+.video_wrapper{
+  background-color: #e64f3a;
+  max-width: 100%;
+  min-width: 820px;
+  height: 777px;
 
   &_conteiner {
     border: 1px solid #E4E4E4;
     border-radius: 32px;
     max-width: 970px;
-    min-width: 820px;
     min-height: 601px;
     display: flex;
     justify-content: center;
@@ -442,24 +454,257 @@
           max-height: 35px;
           min-height: 26px;
         }
-
-        
       }
     }
   }
 }
 
-.video_conteiner_tablet_item_link{
+
+.video_wrapper_conteiner_tablet_item_link{
   width: 120px;
   height: 120px;
   background-color: blueviolet;
   background: url(../assets/icon\ play.svg);
 }
 
+.video_wrapper_item{
+  display: flex;
+  flex-direction: column;
+  padding: 31px 14px 31px 8px;
+  background-color: #f1897b;
+  max-width: 970px;
+  min-height: 121px;
 
+  &_header{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #262A3F;
+  }
 
+  &_text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #262A3F;
+    opacity: 0.8;
+  }
+}
 /*  /video  */
+/* promises */
+.promises{
+  width: 100%;
+  min-height: 670px;
+  position: relative;
+  background-color: #e64f3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 135px;
 
+  &_picture{
+    width: 600px;
+    height: 540px;
+    background: url(../assets/features-background-image.png);
+    background-size: cover;
+
+    &_img{
+      max-width: 600px;
+    }
+  }
+
+  &_info{
+    width: 770px;
+    min-height: 450px;
+    z-index: 3;
+    left: 400px;
+    top: 45px;
+    background: #FFFFFF;
+    opacity: 0.9;
+    display: flex;
+    gap: 56px;
+    padding: 45px 0 45px 87px; //17 0 17 87 - media 940px
+    justify-content: space-between;
+    margin-left: -170px;
+  }
+}  
+
+.promises_info_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  gap: 40px;
+  
+}
+
+.promises_info_list_block{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+
+  &:last-child{
+    justify-content: center;
+  }
+
+  &_tril{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 48px;
+    color: #262A3F;
+  }
+  
+  &_market{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #262A3F;
+    opacity: 0.8;
+
+    &:last-child{
+      margin: 0;
+    }
+  }
+  
+  &_line{
+    width: 100px;
+    height: 2px;
+    background-color: #bb9a85;
+  }
+}
+
+.botton-promises-block{
+  border: 1px solid #E4E4E4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90px;
+
+  &:hover{
+    border: 1px solid #f1897b;
+    transition: ease-in-out .5s;
+  }
+}
+
+.botton-promises-block-botton{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.botton-mark{
+  position: static;
+  margin-left: -100px;
+  margin-top: 20px;
+}
+/* /promises */
+/*  revies  */
+.reviews{
+  width: 100%;
+  min-height: 510px;
+  background-color: violet;
+  display: flex;
+  justify-content: center;
+  padding: 0 135px;
+  align-items: center;
+  
+  &_header{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #262A3F;
+  }
+
+  &_text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    color: #262A3F;
+    opacity: 0.8;
+  }
+
+  &_item{
+    background-color: #bb9a85;
+    max-width: 100%;
+    min-height: 340px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+}
+
+.reviews_block{
+  background-color: darkgoldenrod;
+  max-width: 100%;
+  height: 100%;
+}
+
+.reviews_block_item_client{
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 30px 40px;
+
+  &:first-child{
+    background-image: url(../assets/bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:nth-child(2){
+    background-image: url(../assets/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &:last-child{
+    background-image: url(../assets/bg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &_text{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    opacity: 0.8;
+  }
+
+  &_author{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+  }
+}
+/*  /revies  */
 /*   /Main   */
 /*.content_bg{
   max-width: 1440px;
