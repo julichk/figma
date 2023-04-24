@@ -1,10 +1,9 @@
-/*.content {
-  overflow: hidden;
-  max-width: 1440px;
-  height: 5000px;
-  margin: 0 auto;
-  background-color: #F1897B;
-}*/
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
 
 /*  НА 830-840px РОБИТИ ТАБЛЕТ*/
 
@@ -21,8 +20,8 @@
   &_title {
     width: 530px;
     height: 305px;
-    position: absolute;
-    bottom: 40px;
+    position: relative;
+    bottom: -200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,9 +132,10 @@
 /*  /Header */
 /*   Main   */
 .main{
-  height: 850vh;
+  
   width: 100%;
-  background-color: #b9c8c5;
+  background-color: #f10693;
+  flex-grow: 1;
 
   /*       info     */
 
@@ -709,12 +709,12 @@
 .contacts{
   width: 100%;
   background-color: blueviolet;
-  min-height: 300px;
+  min-height: 400px;
   padding: 0 135px;
 
   &_wrapper{
     width: 100%;
-    min-height: 300px;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -757,7 +757,7 @@
 
     &_item{
       width: 470px;
-      height: 120px;
+      min-height: 120px;
       background-color: rgba(0, 0, 255, 0.432);
 
       &_header{
@@ -783,6 +783,17 @@
 }
 /*  contacts  */
 /*   /Main   */
+
+/*  Footer  */
+.footer{
+  width: 100%;
+  min-height: 86px;
+  background-color: rgb(52, 94, 75);
+  position: relative;
+  bottom: 0;
+  z-index: 10;
+}
+/*  /Footer  */
 /*.content_bg{
   max-width: 1440px;
   height: 1000px;
