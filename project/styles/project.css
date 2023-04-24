@@ -49,7 +49,6 @@
 }
 .header_container_title_text {
   font-family: "Lato";
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
@@ -90,10 +89,6 @@
   opacity: 0.3;
 }
 
-.sticky {
-  height: 500px;
-}
-
 .header_line {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -103,7 +98,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: sticky;
+  position: relative;
   top: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -144,7 +139,6 @@
 /*   Main   */
 .main {
   width: 100%;
-  background-color: #f10693;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -155,7 +149,6 @@
   min-height: 670px;
   position: relative;
   top: -75px;
-  background-color: #e64f3a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +222,6 @@
 }
 .main_container_info_list_tril {
   font-family: "Playfair Display";
-  font-style: normal;
   font-weight: 400;
   font-size: 68px;
   line-height: 72px;
@@ -296,7 +288,6 @@
           flex-direction: column;
   gap: 40px;
   font-family: "Lato";
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
@@ -329,7 +320,6 @@
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
-  background-color: #e64f3a;
 }
 .benefits_conteiner > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -361,7 +351,6 @@
 }
 .benefits_conteiner_block_header {
   font-family: "Playfair Display";
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
@@ -369,7 +358,6 @@
 }
 .benefits_conteiner_block_text {
   font-family: "Lato";
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
@@ -383,7 +371,6 @@
   max-width: 100%;
   height: 600px;
   padding: 0 135px;
-  background-color: rgb(127, 255, 212);
 }
 .quote_conteiner {
   max-width: 100%;
@@ -423,7 +410,6 @@
 }
 .quote_conteiner_block_item_text {
   font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 46px;
@@ -446,7 +432,6 @@
   max-width: 100%;
   height: 777px;
   padding: 20px 135px;
-  background-color: rgb(69, 77, 39);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,7 +448,6 @@
 }
 
 .video_wrapper {
-  background-color: #e64f3a;
   max-width: 100%;
   min-width: 820px;
   height: 777px;
@@ -532,7 +516,6 @@
 .video_wrapper_conteiner_tablet_item_link {
   width: 120px;
   height: 120px;
-  background-color: blueviolet;
   background: url(../assets/icon\ play.svg);
 }
 
@@ -545,13 +528,11 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 31px 14px 31px 8px;
-  background-color: #f1897b;
   max-width: 970px;
   min-height: 121px;
 }
 .video_wrapper_item_header {
   font-family: "Playfair Display";
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
@@ -559,7 +540,6 @@
 }
 .video_wrapper_item_text {
   font-family: "Lato";
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
@@ -573,7 +553,6 @@
   width: 100%;
   min-height: 670px;
   position: relative;
-  background-color: #e64f3a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,7 +622,6 @@
 }
 .promises_info_list_block_tril {
   font-family: "Playfair Display";
-  font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 48px;
@@ -651,7 +629,6 @@
 }
 .promises_info_list_block_market {
   font-family: "Lato";
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
@@ -664,7 +641,6 @@
 .promises_info_list_block_line {
   width: 100px;
   height: 2px;
-  background-color: #bb9a85;
 }
 
 .botton-promises-block {
@@ -712,7 +688,6 @@
 .reviews {
   width: 100%;
   min-height: 510px;
-  background-color: violet;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -726,7 +701,6 @@
 }
 .reviews_header {
   font-family: "Playfair Display";
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
@@ -734,7 +708,6 @@
 }
 .reviews_text {
   font-family: "Lato";
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
@@ -742,7 +715,6 @@
   opacity: 0.8;
 }
 .reviews_item {
-  background-color: #bb9a85;
   max-width: 100%;
   min-height: 340px;
   display: -webkit-box;
@@ -755,7 +727,6 @@
 }
 
 .reviews_block {
-  background-color: darkgoldenrod;
   max-width: 100%;
   height: 100%;
 }
@@ -792,7 +763,6 @@
 }
 .reviews_block_item_client_text {
   font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -813,7 +783,6 @@
 /*  contacts  */
 .contacts {
   width: 100%;
-  background-color: blueviolet;
   min-height: 400px;
   padding: 0 135px;
 }
@@ -834,7 +803,6 @@
   border-bottom: 1px solid #E4E4E4;
 }
 .contacts_wrapper_form {
-  background-color: #8bf17b;
   width: 420px;
   height: 240px;
 }
@@ -849,9 +817,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
-}
-.contacts_wrapper_form_block_label {
-  background-color: #85bbb1;
 }
 .contacts_wrapper_form_block_input {
   width: 100%;
@@ -870,11 +835,9 @@
 .contacts_wrapper_item {
   width: 470px;
   min-height: 120px;
-  background-color: rgba(0, 0, 255, 0.432);
 }
 .contacts_wrapper_item_header {
   font-family: "Playfair Display";
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 39px;
@@ -882,7 +845,6 @@
 }
 .contacts_wrapper_item_text {
   font-family: "Lato";
-  font-style: normal;
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
@@ -896,10 +858,58 @@
 .footer {
   width: 100%;
   min-height: 86px;
-  background-color: rgb(52, 94, 75);
-  position: relative;
-  bottom: 0;
-  z-index: 10;
+  padding: 0 135px;
+}
+
+.footer_wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_wrapper_copy-right {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  color: #262A3F;
+  opacity: 0.6;
+  text-align: center;
+}
+.footer_wrapper_made-by {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  color: #262A3F;
+  text-align: center;
+}
+.footer_wrapper_made-by_span {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 26px;
+  color: #262A3F;
+  opacity: 0.6;
+}
+.footer_wrapper_terms-cond {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  color: #262A3F;
+  text-align: center;
 }
 
 /*  /Footer  */
