@@ -2,9 +2,9 @@ const money = prompt("Привіт,  скільки вкладаєш?", "чис
 const rate = 5;
 const time = 2;
 
-const A = money * Math.pow(1 + rate / 100, time);
+const procent = money * Math.pow(1 + rate / 100, time);
 
-const CI = A - money;
+const uWillGet = A - money;
 
 alert("За рік тобі капне: " + CI);
 
