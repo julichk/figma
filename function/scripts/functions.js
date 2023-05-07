@@ -1,7 +1,7 @@
 
 //ЗАВДАННЯ 1
 // let num = 0;
-// let rem;
+// let rem = 0;
 // let PerfectNumber = prompt('Введи число', '');
 // let parseNumber = parseInt(number);
 
@@ -29,22 +29,22 @@
 // const maxParseNumber = parseInt(maxNumber);
 
 // function checkPerfectNum(minParseNumber, maxParseNumber) {
-//   for (let num = minParseNumber; num <= maxParseNumber; num++) {
-//     let sum = 0;
-//     for (let index = 1; index < num; index++) {
-//       const rem = num % index;
-//       if (rem === 0) {
-//         sum += index;
+//   for (let numb = minParseNumber; numb <= maxParseNumber; numb++) {
+//     let summ = 0;
+//     for (let variable = 1; variable < numb; variable++) {
+//       const remainder = numb % variable;
+//       if (remainder === 0) {
+//         summ += variable;
 //       }
 //     }
-//     if (sum === num) {
-//       document.write(`${num} - Єєєє!!!!` + '<br/>');
+//     if (summ === numb) {
+//       document.write(`${numb} - Єєєє!!!!` + '<br/>');
 //     } else {
-//       document.write(`${num} - Ні :(` + '<br/>');
+//       document.write(`${numb} - Ні :(` + '<br/>');
 //     }
 //   }
 // }
 
-checkPerfectNum(minParseNumber, maxParseNumber);
+//checkPerfectNum(minParseNumber, maxParseNumber);
 
 
