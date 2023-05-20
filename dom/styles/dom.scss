@@ -1,18 +1,21 @@
+
+.main{
+  height: 150vh;
+  padding: 50px 10px;
+}
+
 .content {
   width: 100%;
-  height: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   position: relative;
   z-index: 0;
-  top: 60px;
-  
+  gap:30px;
 
   &_modal {
     position: absolute;
-    //display: none;
   }
 }
 
@@ -49,39 +52,61 @@
 }
 
 //3 завдання світлофор
-.content_traffic-lights{
- background-color: rgba(49, 49, 48, 0.888);
- width: 300px;
- height: 700px;
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- align-items: center;
- gap: 10px;
- padding: 10px;
+.content_traffic-lights {
+  background-color: rgba(49, 49, 48, 0.888);
+  width: 300px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
 
- &_color{
-  background-color: rgba(97, 101, 101, 0.714);
-  width: 87%;
-  height: 100%;
-  border-radius: 50%;
- }
+  &_color {
+    background-color: rgba(97, 101, 101, 0.714);
+    width: 87%;
+    height: 100%;
+    border-radius: 50%;
+  }
 
- &_button{
-  width: 100px;
-  height: 50px;
-  border: 1px solid firebrick;
- }
+  &_button {
+    width: 100px;
+    height: 50px;
+    border: 1px solid firebrick;
+  }
 }
 
 .red.active {
-  background-color: #AA0000;
+  background-color: #aa0000;
 }
 
 .yellow.active {
-  background-color: #FFFF00;
+  background-color: #ffff00;
 }
 
 .green.active {
-  background-color: #00AA00;
+  background-color: #00aa00;
+}
+
+//ЗАВДАННЯ 1
+.content_music{
+  background-color:  rgba(50, 50, 93, 0.071) ;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  height: 200px;
+  padding: 10px;
+
+  &_list{
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: rgba(98, 219, 179, 0.792);
+  }
+}
+
+.author{
+  color: rgb(224, 185, 134);
+}
+
+.song {
+  color:rgb(217, 191, 217);
 }
