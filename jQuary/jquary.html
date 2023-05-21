@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/jquary.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <header class="header">
+        <nav class="header_navbar">
+          <div class="header_navbar_links">
+            <img
+              class="header_navbar_links_logo"
+              src="./assets/logo.svg"
+              alt="logo"
+            />
+            <ul class="header_navbar_links_list">
+              <li class="header_navbar_links_list_item">
+                <a
+                  class="header_navbar_links_list_item_anchor"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="header_navbar_links_list_item">
+                <a class="header_navbar_links_list_item_anchor" href="#"
+                  >Catalog</a
+                >
+              </li>
+              <li class="header_navbar_links_list_item">
+                <a class="header_navbar_links_list_item_anchor" href="#"
+                  >News</a
+                >
+              </li>
+              <li class="header_navbar_links_list_item">
+                <a class="header_navbar_links_list_item_anchor" href="#"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header_user">
+          <img src="./assets/search-icon.svg" alt="search-icon" />
+          <img src="./assets/profile-icon.svg" alt="profile-icon" />
+        </div>
+      </header>
+      <main class="main">
+        <!-- first slider -->
+        <!-- <div class="swiper baner">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./assets/picture-baner1.png" alt="pic">
+    </div>
+    <div class="swiper-slide">
+      <img src="./assets/picture-baner2.png" alt="pic">
+    </div>
+    <div class="swiper-slide">
+      <img src="./assets/picture-baner3.png" alt="pic">
+    </div>
+  </div>
+  <div class="swiper-pagination"></div>
+</div> -->
+        <div class="title">
+          <h2 class="title_header">new arrivals</h2>
+        </div>
+        <!-- second slider -->
+        <div class="hru">
+          <div
+            class="center"
+            data-slick='{"slidesToShow": 4, "slidesToScroll": 4, "prevArrow": "<button type=\"button\" class=\"slick-prev\">Previous</button>", "nextArrow": "<button type=\"button\" class=\"slick-next\">Next</button>"}'
+          >
+            <div><img src="./assets/guitar1.png" alt="" /></div>
+            <div><img src="./assets/guitar2.png" alt="" /></div>
+            <div><img src="./assets/guitar3.png" alt="" /></div>
+            <div><img src="./assets/guitar4.png" alt="" /></div>
+            <div><img src="./assets/guitar5.png" alt="" /></div>
+          </div>
+          <!-- <button class="slick-prev">Previous</button>, 
+    <button class="slick-next">Next</button> -->
+        </div>
+      </main>
+    </div>
+    <script src="./scripts/jquary.js"></script>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</html>
