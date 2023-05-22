@@ -13,7 +13,7 @@ const swiperBaner = new Swiper(".baner", {
   loop: true,
   effect: "slider",
   autoplay: {
-    delay: 5000, 
+    delay: 5000,
   },
   pagination: {
     el: ".baner .swiper-pagination",
