@@ -11,9 +11,9 @@ const swiper = new Swiper(".swiper", {
 const swiperBaner = new Swiper(".baner", {
   direction: "horizontal",
   loop: true,
-  effect: "cube",
+  effect: "slider",
   autoplay: {
-    delay: 5000, // Змініть значення delay на 5000 для автоматичної зміни слайдів кожні 5 секунд
+    delay: 5000, 
   },
   pagination: {
     el: ".baner .swiper-pagination",
