@@ -1,6 +1,10 @@
+
+// second slider
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
+  slidesPerView: 5,
+  spaceBetween: 10,
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -8,6 +12,20 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+// third slider
+const swiperLast = new Swiper(".swiper .last", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 5,
+  spaceBetween: 10,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+//// first slider
 const swiperBaner = new Swiper(".baner", {
   direction: "horizontal",
   loop: true,
