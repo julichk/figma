@@ -1,12 +1,12 @@
-.content{
+.content {
   width: 100%;
   //background-color: aqua;
   //padding: 0 44px;
 }
 
 // HEADER + NAVBAR
-.header{
-  background-color: #F8F1EA;
+.header {
+  background-color: #f8f1ea;
   width: 100%;
   height: 80px;
   display: flex;
@@ -14,11 +14,11 @@
   padding: 0 58px;
   gap: 356px;
 
-  &_navbar{
-  width: 100%;
-  display: flex;
+  &_navbar {
+    width: 100%;
+    display: flex;
 
-    &_links{
+    &_links {
       display: flex;
       gap: 213px;
       display: flex;
@@ -26,12 +26,12 @@
       justify-content: center;
       width: 100%;
 
-      &_logo{
+      &_logo {
         width: 182px;
         height: 32px;
       }
-      
-      &_list{
+
+      &_list {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -40,7 +40,7 @@
     }
   }
 
-  &_user{
+  &_user {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -48,32 +48,32 @@
 }
 
 .header_navbar_links_list_item {
-font-family: 'Montserrat';
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-width: 93px;
-height: 80px;
-display: flex;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  width: 93px;
+  height: 80px;
+  display: flex;
 
-  &_anchor{
-    color:rgb(0, 0, 0);
+  &_anchor {
+    color: rgb(0, 0, 0);
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    &:hover{
+    &:hover {
       background-color: coral;
       color: rgb(254, 254, 254);
-      transition: ease-in .3s;
+      transition: ease-in 0.3s;
     }
   }
 }
 // /HEADER + NAVBAR
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -85,95 +85,90 @@ display: flex;
 }
 
 //TITLE HEADER
-.title{
-width: 100%;
-height: 40px;
+.title {
+  width: 100%;
+  height: 40px;
 
-  &_header{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 32px;
-line-height: 39px;
-text-align: center;
-text-transform: uppercase;
-
+  &_header {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    text-transform: uppercase;
   }
 }
 //SLIDER2
 
-
 //TITLE HEADER2
 
 //SLIDER3
-.last{
-  background: #F8F1EA;
+.last {
+  background: #f8f1ea;
 }
 
 // FOOTER
 
-.footer{
-  background: #35312D;
+.footer {
+  background: #35312d;
   padding: 0 58px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  color: #F8F1EA;
+  color: #f8f1ea;
   padding-top: 70px;
   padding-bottom: 7px;
 
-  &_conteiner{
+  &_conteiner {
     display: flex;
     justify-content: space-between;
     width: 100%;
 
-    &_block{
+    &_block {
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 35px;
 
-      &_logo{
+      &_logo {
         width: 150px;
       }
 
-      &_links{
+      &_links {
         display: flex;
         flex-direction: column;
         gap: 10px;
 
-        &_item{
-          
-
-          &_anchor{
-            font-family: 'Montserrat';
+        &_item {
+          &_anchor {
+            font-family: "Montserrat";
             font-weight: 500;
             font-size: 20px;
             line-height: 24px;
-            color: #F8F1EA;
+            color: #f8f1ea;
           }
         }
       }
     }
 
-    &_block-contact{
+    &_block-contact {
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 51px;
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-weight: 500;
       font-size: 26px;
       line-height: 32px;
-      color: #F8F1EA;
+      color: #f8f1ea;
       align-items: center;
 
-
-      &_item{
+      &_item {
         display: flex;
         flex-direction: column;
         width: 100%;
