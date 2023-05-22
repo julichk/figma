@@ -28,17 +28,17 @@
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  
+
   height: 100px;
   box-shadow: rgba(4, 1, 1, 0.628) 0px 2px 8px 0px;
   border-radius: 10px;
   line-height: 20px;
   max-width: 500px;
 
-  &:hover{
+  &:hover {
     max-width: 600px;
     height: 200px;
-    transition: ease-in .5s;
+    transition: ease-in 0.5s;
   }
 
   &_text {
@@ -46,16 +46,16 @@
   }
 }
 
-.style{
+.style {
   padding: 20px;
 }
 
-.content_window{
+.content_window {
   width: 100%;
   display: flex;
   justify-content: center;
 
-  &_width{
+  &_width {
     box-shadow: rgba(4, 1, 1, 0.628) 0px 2px 8px 0px;
     border-radius: 10px;
     width: 500px;
@@ -63,21 +63,21 @@
     padding: 20px;
     line-height: 20px;
 
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
-  
   }
 }
 
-.content_table{
- width: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
+.content_table {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-td, th {
+td,
+th {
   padding: 0.5rem;
   text-align: center;
 }
@@ -88,12 +88,11 @@ table {
   border-radius: 10px;
   box-shadow: rgba(4, 1, 1, 0.628) 0px 2px 8px 0px;
 
-  &:hover{
+  &:hover {
     max-width: 600px;
     height: 300px;
     transition: ease-in 1s;
   }
-
 }
 
 tbody tr:nth-child(odd) {
