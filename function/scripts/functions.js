@@ -1,4 +1,3 @@
-
 //ЗАВДАННЯ 1
 // let num = 0;
 // let rem = 0;
@@ -20,7 +19,6 @@
 // }
 
 // checkPerfectNum(parseNumber);
-
 
 //ЗАВДАННЯ 2
 // const minNumber = prompt('Введи мінімальне число ', '');
@@ -46,5 +44,3 @@
 // }
 
 //checkPerfectNum(minParseNumber, maxParseNumber);
-
-

@@ -158,7 +158,7 @@
 }
 @media (prefers-color-scheme: dark) {
   .header_container_title_header_green {
-    color: #689FF2;
+    color: #689ff2;
   }
 }
 .header_container_title_text {
@@ -199,7 +199,7 @@
 }
 @media (prefers-color-scheme: dark) {
   .header_container_title_link:hover .header_container_title_link_marker {
-    background-color: #02E0AB;
+    background-color: #02e0ab;
     opacity: 0.5;
   }
 }
@@ -210,7 +210,7 @@
 }
 @media (prefers-color-scheme: dark) {
   .header_container_title_link:hover .header_container_title_link_text {
-    color: #02E0AB;
+    color: #02e0ab;
     opacity: 0.9;
   }
 }
@@ -224,7 +224,7 @@
 }
 @media (prefers-color-scheme: dark) {
   .header_container_title_link_text {
-    color: #53F3CD;
+    color: #53f3cd;
     opacity: 0.6;
   }
 }
@@ -244,7 +244,7 @@
 }
 @media (prefers-color-scheme: dark) {
   .header_container_title_link_marker {
-    background-color: #53F3CD;
+    background-color: #53f3cd;
     opacity: 0.3;
   }
 }
@@ -343,7 +343,7 @@
 }
 @media (prefers-color-scheme: dark) {
   .header_line_nav_link:hover {
-    border-bottom: 2px solid #02E0AB;
+    border-bottom: 2px solid #02e0ab;
   }
 }
 
@@ -397,7 +397,7 @@
   z-index: 3;
   left: 400px;
   top: 45px;
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 0.9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -441,7 +441,7 @@
 .blure-bg_green {
   width: 100%;
   height: 100%;
-  background: linear-gradient(166.11deg, rgba(124, 171, 171, 0.122) 46.73%, #FFFFFF 63.21%, #FFFFFF 63.21%);
+  background: linear-gradient(166.11deg, rgba(124, 171, 171, 0.122) 46.73%, #ffffff 63.21%, #ffffff 63.21%);
 }
 @media (prefers-color-scheme: dark) {
   .blure-bg_green {
@@ -450,7 +450,7 @@
 }
 @media screen and (max-width: 610px) {
   .blure-bg_green {
-    background: linear-gradient(166.11deg, rgba(132, 184, 184, 0.073) 46.73%, #FFFFFF 63.21%, #FFFFFF 63.21%);
+    background: linear-gradient(166.11deg, rgba(132, 184, 184, 0.073) 46.73%, #ffffff 63.21%, #ffffff 63.21%);
   }
 }
 @media screen and (max-width: 610px) and (prefers-color-scheme: dark) {
@@ -470,7 +470,7 @@
 }
 @media screen and (max-width: 610px) {
   .blure-bg_white {
-    background: linear-gradient(166.11deg, rgba(132, 184, 184, 0.049) 46.73%, #FFFFFF 63.21%, #FFFFFF 63.21%);
+    background: linear-gradient(166.11deg, rgba(132, 184, 184, 0.049) 46.73%, #ffffff 63.21%, #ffffff 63.21%);
   }
 }
 @media screen and (max-width: 610px) and (prefers-color-scheme: dark) {
@@ -497,7 +497,7 @@
   font-size: 68px;
   line-height: 72px;
   text-align: center;
-  color: #262A3F;
+  color: #262a3f;
 }
 @media (prefers-color-scheme: dark) {
   .main_container_info_list_tril {
@@ -516,7 +516,7 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
-  color: #262A3F;
+  color: #262a3f;
   opacity: 0.8;
   margin: 12px 0 40px 0;
 }
@@ -588,7 +588,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  color: #262A3F;
+  color: #262a3f;
   opacity: 0.8;
 }
 @media (prefers-color-scheme: dark) {
@@ -674,7 +674,7 @@
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
-  color: #262A3F;
+  color: #262a3f;
 }
 @media (prefers-color-scheme: dark) {
   .benefits_conteiner_block_header {
@@ -691,7 +691,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  color: #262A3F;
+  color: #262a3f;
   opacity: 0.8;
 }
 @media (prefers-color-scheme: dark) {
@@ -779,7 +779,7 @@
   font-size: 32px;
   line-height: 46px;
   letter-spacing: 0.04em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media screen and (max-width: 858px) {
   .quote_conteiner_block_item_text {
@@ -801,7 +801,7 @@
   font-size: 16px;
   line-height: 10px;
   letter-spacing: 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media screen and (max-width: 600px) {
   .quote_conteiner_block_item_autor {
@@ -858,7 +858,7 @@
   }
 }
 .video_wrapper_conteiner {
-  border: 1px solid #E4E4E4;
+  border: 1px solid #e4e4e4;
   border-radius: 32px;
   max-width: 970px;
   min-height: 501px;
@@ -918,7 +918,7 @@
   max-height: 13px;
   min-width: 9px;
   min-height: 9px;
-  border: 1px solid #E4E4E4;
+  border: 1px solid #e4e4e4;
   border-radius: 32px;
 }
 .video_wrapper_conteiner_tablet_item:nth-child(2) {
@@ -943,7 +943,7 @@
   }
 }
 .video_wrapper_conteiner_tablet_item:last-child {
-  border: 1px solid #E4E4E4;
+  border: 1px solid #e4e4e4;
   border-radius: 32px;
   max-width: 35px;
   min-width: 26px;
@@ -980,7 +980,7 @@
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
-  color: #262A3F;
+  color: #262a3f;
 }
 @media (prefers-color-scheme: dark) {
   .video_wrapper_item_header {
@@ -997,7 +997,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  color: #262A3F;
+  color: #262a3f;
   opacity: 0.8;
 }
 @media (prefers-color-scheme: dark) {
@@ -1057,7 +1057,7 @@
   z-index: 3;
   left: 400px;
   top: 45px;
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 0.9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1135,7 +1135,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 48px;
-  color: #262A3F;
+  color: #262a3f;
 }
 @media (prefers-color-scheme: dark) {
   .promises_info_list_block_tril {
@@ -1147,7 +1147,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  color: #262A3F;
+  color: #262a3f;
   opacity: 0.8;
 }
 @media (prefers-color-scheme: dark) {
@@ -1165,7 +1165,7 @@
 }
 
 .botton-promises-block {
-  border: 1px solid #E4E4E4;
+  border: 1px solid #e4e4e4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1195,7 +1195,7 @@
 }
 @media (prefers-color-scheme: dark) {
   .botton-promises-block:hover {
-    border: 1px solid #02E0AB;
+    border: 1px solid #02e0ab;
   }
 }
 
@@ -1250,7 +1250,7 @@
   font-weight: 400;
   font-size: 40px;
   line-height: 48px;
-  color: #262A3F;
+  color: #262a3f;
 }
 @media (prefers-color-scheme: dark) {
   .reviews_header {
@@ -1262,7 +1262,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  color: #262A3F;
+  color: #262a3f;
   opacity: 0.8;
 }
 @media (prefers-color-scheme: dark) {
@@ -1343,7 +1343,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.8;
 }
 .reviews_block_item_client_author {
@@ -1353,7 +1353,7 @@
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 0.08em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*  /revies  */
@@ -1381,8 +1381,8 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 230px;
-  border-top: 1px solid #E4E4E4;
-  border-bottom: 1px solid #E4E4E4;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
 }
 @media screen and (max-width: 900px) {
   .contacts_wrapper {
@@ -1424,14 +1424,14 @@
 .contacts_wrapper_form_block_input {
   width: 100%;
   height: 32px;
-  border-bottom: 1px solid #E4E4E4;
+  border-bottom: 1px solid #e4e4e4;
   font-family: "Playfair Display";
   font-style: italic;
   font-weight: 400;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0.08em;
-  color: #262A3F;
+  color: #262a3f;
   opacity: 0.5;
   padding-bottom: 12px;
 }
@@ -1449,7 +1449,7 @@
   font-weight: 400;
   font-size: 40px;
   line-height: 39px;
-  color: #262A3F;
+  color: #262a3f;
 }
 @media (prefers-color-scheme: dark) {
   .contacts_wrapper_item_header {
@@ -1466,7 +1466,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 26px;
-  color: #262A3F;
+  color: #262a3f;
   opacity: 0.8;
 }
 @media (prefers-color-scheme: dark) {
@@ -1520,7 +1520,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 26px;
-  color: #262A3F;
+  color: #262a3f;
   opacity: 0.6;
   text-align: center;
 }
@@ -1541,7 +1541,7 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.08em;
-  color: #262A3F;
+  color: #262a3f;
   text-align: center;
 }
 @media (prefers-color-scheme: dark) {
@@ -1558,7 +1558,7 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 26px;
-  color: #262A3F;
+  color: #262a3f;
   opacity: 0.6;
 }
 @media (prefers-color-scheme: dark) {
@@ -1582,7 +1582,7 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.08em;
-  color: #262A3F;
+  color: #262a3f;
   text-align: center;
 }
 @media (prefers-color-scheme: dark) {

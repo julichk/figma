@@ -17,18 +17,17 @@ document.addEventListener("keydown", function (event) {
     //myText.style.display = 'none'
     block.appendChild(textArea);
     textArea.value = myText.textContent;
-    block.classList.remove('style');
+    block.classList.remove("style");
     //myText.remove()
     myText.style.display = "none";
   } else if (
     (event.key === "s" || event.key === "s") &&
     (event.ctrlKey || event.metaKey)
   ) {
-    
     if (textArea) {
       myText.textContent = textArea.value;
       block.removeChild(textArea);
-      document.querySelector('.content_conteiner_item').style.padding = '0px';
+      document.querySelector(".content_conteiner_item").style.padding = "0px";
       myText.style.display = "block";
     }
   }
@@ -102,38 +101,37 @@ function sortTable(n) {
 }
 
 //ЗАВДАННЯ 3
-const myWidthBlock= document.querySelector('.content_window_width');
+const myWidthBlock = document.querySelector(".content_window_width");
 
-let width, height; 
+let width, height;
 let resizing = false;
 let initialX;
 let initialY;
 
-const changeWidth = (event) => { 
-  
+const changeWidth = (event) => {
   resizing = true;
   initialX = event.clientX;
   initialY = event.clientY;
   width = parseInt(window.getComputedStyle(event.target).width, 10); //10 - показує яку систему чисел використовувати "100" = 100
   height = parseInt(window.getComputedStyle(event.target).height, 10);
-  
-  document.addEventListener('mousemove', resize);
-  document.addEventListener('mouseup', stop);
+
+  document.addEventListener("mousemove", resize);
+  document.addEventListener("mouseup", stop);
 };
-  
-  const resize = () => {
-  if(resizing) {
-  const changeMyWidth = width + (event.clientX - initialX);
-  myWidthBlock.style.width = changeMyWidth + 'px';
-  const changeMyHeight = height + (event.clientY - initialY);
-  myWidthBlock.style.height = changeMyHeight + 'px';
+
+const resize = () => {
+  if (resizing) {
+    const changeMyWidth = width + (event.clientX - initialX);
+    myWidthBlock.style.width = changeMyWidth + "px";
+    const changeMyHeight = height + (event.clientY - initialY);
+    myWidthBlock.style.height = changeMyHeight + "px";
   }
 };
 
-  const stop = () => {
+const stop = () => {
   resizing = false;
-  document.removeEventListener('mousemove', resize);
-  document.removeEventListener('mouseup', stop);
-}
+  document.removeEventListener("mousemove", resize);
+  document.removeEventListener("mouseup", stop);
+};
 
-myWidthBlock.addEventListener('mousedown', changeWidth);
+myWidthBlock.addEventListener("mousedown", changeWidth);
