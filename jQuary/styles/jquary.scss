@@ -77,6 +77,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
 }
 //SLIDER 1
 .baner {
@@ -110,17 +111,62 @@
 }
 //SLIDER2
 
+
 .guitar {
-  background-color: aqua;
   margin: 0 !important;
 }
 
 //TITLE HEADER2
-
+.last-section{
+  background: #f8f1ea;
+  display: flex;
+  flex-direction: column;
+  gap: 53px;
+  height: 290px;
+  padding: 10px;
+}
 //SLIDER3
 .last {
-  background: #f8f1ea;
+  height: 100%;
+  display: flex !important;
+  align-items: center !important;
   margin: 0 !important;
+  justify-content: center;
+}
+
+.logos{
+  margin:  0 !important;
+}
+
+.button-sect{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &_of-second-sl{
+    border: 2px solid #000000;
+    padding: 15px 57px;
+    max-width: 235px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:hover{
+      background-color: #F16A50;
+      color: #fff;
+      border:1px solid #F16A50;
+    }
+  } 
+}
+
+.button-of-second-sl{
+  border: 2px solid #000000;
+  padding: 15px 57px;
+  max-width: 227px;
 }
 
 // FOOTER
@@ -141,8 +187,9 @@
 
   &_conteiner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
+    gap: 300px;
 
     &_block {
       width: 100%;
@@ -181,15 +228,59 @@
       font-size: 26px;
       line-height: 32px;
       color: #f8f1ea;
-      align-items: center;
+      //align-items: center;
 
       &_item {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        max-width: 325px;
         gap: 35px;
-        align-items: center;
+        //align-items: center;
+
+        &_icons{
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          gap: 3px;
+
+          &_inst{
+            width: 30px;
+            height: 30px;
+
+            &:hover{
+              stroke: #F16A50;
+            }
+          }
+
+          &_face{
+            width: 15px;
+            height: 30px;
+          }
+
+          &_pin{
+            width: 23px;
+            height: 23px;
+          }
+
+          &_twit{
+            width: 36px;
+            height: 30px;
+          }
+
+          &_ytb{
+            width: 40px;
+            height: 30px;
+          }
+        }
       }
     }
   }
+}
+.footer_conteiner_block-contact_item_icons_hover path:hover{
+  stroke: #F16A50;
+  fill: #F16A50;
+}
+
+.footer_conteiner_block-contact_item_icons_hover-twit path:hover{
+  stroke: #F16A50;
 }
