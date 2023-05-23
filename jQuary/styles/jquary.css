@@ -133,13 +133,74 @@
 }
 
 .guitar {
-  background-color: aqua;
   margin: 0 !important;
 }
 
-.last {
+.last-section {
   background: #f8f1ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 53px;
+  height: 290px;
+  padding: 10px;
+}
+
+.last {
+  height: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
   margin: 0 !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logos {
+  margin: 0 !important;
+}
+
+.button-sect {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.button-sect_of-second-sl {
+  border: 2px solid #000000;
+  padding: 15px 57px;
+  max-width: 235px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button-sect_of-second-sl:hover {
+  background-color: #F16A50;
+  color: #fff;
+  border: 1px solid #F16A50;
+}
+
+.button-of-second-sl {
+  border: 2px solid #000000;
+  padding: 15px 57px;
+  max-width: 227px;
 }
 
 .footer {
@@ -167,10 +228,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+  gap: 300px;
 }
 .footer_conteiner_block {
   width: 100%;
@@ -218,9 +280,6 @@
   font-size: 26px;
   line-height: 32px;
   color: #f8f1ea;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .footer_conteiner_block-contact_item {
   display: -webkit-box;
@@ -230,9 +289,48 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  max-width: 325px;
   gap: 35px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+.footer_conteiner_block-contact_item_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3px;
+}
+.footer_conteiner_block-contact_item_icons_inst {
+  width: 30px;
+  height: 30px;
+}
+.footer_conteiner_block-contact_item_icons_inst:hover {
+  stroke: #F16A50;
+}
+.footer_conteiner_block-contact_item_icons_face {
+  width: 15px;
+  height: 30px;
+}
+.footer_conteiner_block-contact_item_icons_pin {
+  width: 23px;
+  height: 23px;
+}
+.footer_conteiner_block-contact_item_icons_twit {
+  width: 36px;
+  height: 30px;
+}
+.footer_conteiner_block-contact_item_icons_ytb {
+  width: 40px;
+  height: 30px;
+}
+
+.footer_conteiner_block-contact_item_icons_hover path:hover {
+  stroke: #F16A50;
+  fill: #F16A50;
+}
+
+.footer_conteiner_block-contact_item_icons_hover-twit path:hover {
+  stroke: #F16A50;
 }
