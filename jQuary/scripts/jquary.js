@@ -1,4 +1,3 @@
-
 // second slider
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",

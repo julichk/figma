@@ -192,9 +192,9 @@
   text-transform: uppercase;
 }
 .button-sect_of-second-sl:hover {
-  background-color: #F16A50;
+  background-color: #f16a50;
   color: #fff;
-  border: 1px solid #F16A50;
+  border: 1px solid #f16a50;
 }
 
 .button-of-second-sl {
@@ -307,7 +307,7 @@
   height: 30px;
 }
 .footer_conteiner_block-contact_item_icons_inst:hover {
-  stroke: #F16A50;
+  stroke: #f16a50;
 }
 .footer_conteiner_block-contact_item_icons_face {
   width: 15px;
@@ -327,10 +327,10 @@
 }
 
 .footer_conteiner_block-contact_item_icons_hover path:hover {
-  stroke: #F16A50;
-  fill: #F16A50;
+  stroke: #f16a50;
+  fill: #f16a50;
 }
 
 .footer_conteiner_block-contact_item_icons_hover-twit path:hover {
-  stroke: #F16A50;
+  stroke: #f16a50;
 }

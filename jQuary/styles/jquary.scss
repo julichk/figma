@@ -77,7 +77,6 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-
 }
 //SLIDER 1
 .baner {
@@ -111,13 +110,12 @@
 }
 //SLIDER2
 
-
 .guitar {
   margin: 0 !important;
 }
 
 //TITLE HEADER2
-.last-section{
+.last-section {
   background: #f8f1ea;
   display: flex;
   flex-direction: column;
@@ -134,36 +132,36 @@
   justify-content: center;
 }
 
-.logos{
-  margin:  0 !important;
+.logos {
+  margin: 0 !important;
 }
 
-.button-sect{
+.button-sect {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  &_of-second-sl{
+  &_of-second-sl {
     border: 2px solid #000000;
     padding: 15px 57px;
     max-width: 235px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     text-transform: uppercase;
 
-    &:hover{
-      background-color: #F16A50;
+    &:hover {
+      background-color: #f16a50;
       color: #fff;
-      border:1px solid #F16A50;
+      border: 1px solid #f16a50;
     }
-  } 
+  }
 }
 
-.button-of-second-sl{
+.button-of-second-sl {
   border: 2px solid #000000;
   padding: 15px 57px;
   max-width: 227px;
@@ -237,37 +235,37 @@
         gap: 35px;
         //align-items: center;
 
-        &_icons{
+        &_icons {
           display: flex;
           width: 100%;
           justify-content: space-between;
           gap: 3px;
 
-          &_inst{
+          &_inst {
             width: 30px;
             height: 30px;
 
-            &:hover{
-              stroke: #F16A50;
+            &:hover {
+              stroke: #f16a50;
             }
           }
 
-          &_face{
+          &_face {
             width: 15px;
             height: 30px;
           }
 
-          &_pin{
+          &_pin {
             width: 23px;
             height: 23px;
           }
 
-          &_twit{
+          &_twit {
             width: 36px;
             height: 30px;
           }
 
-          &_ytb{
+          &_ytb {
             width: 40px;
             height: 30px;
           }
@@ -276,11 +274,11 @@
     }
   }
 }
-.footer_conteiner_block-contact_item_icons_hover path:hover{
-  stroke: #F16A50;
-  fill: #F16A50;
+.footer_conteiner_block-contact_item_icons_hover path:hover {
+  stroke: #f16a50;
+  fill: #f16a50;
 }
 
-.footer_conteiner_block-contact_item_icons_hover-twit path:hover{
-  stroke: #F16A50;
+.footer_conteiner_block-contact_item_icons_hover-twit path:hover {
+  stroke: #f16a50;
 }
