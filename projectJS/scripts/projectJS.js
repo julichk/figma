@@ -24,6 +24,8 @@
 // }
 
 // initMap();
+
+// ПЕРШИЙ СЛАЙДЕР
 $(document).ready(function () {
   const swiperBaner = new Swiper(".background", {
     direction: "vertical",
@@ -42,3 +44,15 @@ $(document).ready(function () {
     },
   });
 });
+
+// СКРОЛ
+const scroll = document.querySelector(".header_title_arrow");
+
+const scroolToInfo = () => {
+  const info = document.querySelector(".main_section-do");
+  info.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
+};
+scroll.addEventListener("click", scroolToInfo);
