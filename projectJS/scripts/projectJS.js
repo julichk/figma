@@ -1,15 +1,15 @@
 // let map;
 
 // async function initMap() {
-//   // The location of Uluru
-//   const position = { lat: 40.670145, lng: -73.910384 };
-//   // Request needed libraries.
-//   //@ts-ignore
+  // The location of Uluru
+  // const position = { lat: 40.670145, lng: -73.910384 };
+  // Request needed libraries.
+  //@ts-ignore
 //   const { Map } = await google.maps.importLibrary("maps");
 //   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
 //   // The map, centered at Uluru
-//   map = new Map(document.getElementById("map"), {
+//   map = new Map(document.getElementsByClassName("map"), {
 //     zoom: 4,
 //     center: position,
 //     mapId: "b1bd6c3973ab764",
@@ -56,3 +56,56 @@ const scroolToInfo = () => {
   });
 };
 scroll.addEventListener("click", scroolToInfo);
+
+// slider 2
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  loop: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".dots",
+    type: "bullets",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+});
+
+var appendNumber = 4;
+var prependNumber = 1;
+document
+  .querySelector(".prepend-2-slides")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    swiper.prependSlide([
+      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+    ]);
+  });
+document
+  .querySelector(".prepend-slide")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    swiper.prependSlide(
+      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+    );
+  });
+document
+  .querySelector(".append-slide")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    swiper.appendSlide(
+      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+    );
+  });
+document
+  .querySelector(".append-2-slides")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    swiper.appendSlide([
+      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+    ]);
+  });
