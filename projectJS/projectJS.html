@@ -492,32 +492,23 @@
       <h3>My map:</h3>
       <div class="map"></div>
     </div>
-
-    <!-- <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSnB5rxEV_quBmJ7n8XYl1HRCFT1PvLz4
-  &callback=initMap"
-      async
-      defer
-    ></script>
     <script>
       function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.031 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: uluru,
-          mapID: "df0d5421b2d94e45",
+        var location = {lat: 40.66974595124408, lng: -73.9173228157657}; 
+        var map = new google.maps.Map(document.querySelector('.map'), {
+          center: location,
+          zoom: 14
         });
-        // The marker, positioned at Uluru
-        new google.maps.Marker({
-          position: uluru,
-          map: map,
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
         });
       }
-      window.initMap = initMap;
-    </script> -->
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSnB5rxEV_quBmJ7n8XYl1HRCFT1PvLz4&callback=initMap" async defer></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./scripts/projectJS.js"></script>
   </body>
 </html>
+
+
