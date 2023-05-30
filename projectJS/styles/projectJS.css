@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .content {
   width: 100%;
   display: -webkit-box;
@@ -598,14 +599,14 @@
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
-  color: #2C4058;
+  color: #2c4058;
 }
 .swiper-slide_content_descript_text {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  color: #2C4058;
+  color: #2c4058;
 }
 .swiper-slide_content_user {
   width: 100%;
@@ -648,7 +649,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #2C4058;
+  color: #2c4058;
 }
 
 .swiper-slide_content_user_item_date {
@@ -658,7 +659,7 @@
   font-size: 14px;
   line-height: 17px;
   /* identical to box height */
-  color: #55B7FF;
+  color: #55b7ff;
 }
 
 .swiper-slide img {
@@ -781,7 +782,7 @@
   -ms-grid-column: 7;
 }
 .gallery_container_button {
-  border: 1px solid #2C4058;
+  border: 1px solid #2c4058;
   padding: 16px 57px;
   max-width: 200px;
   width: 200px;
@@ -895,8 +896,206 @@
      object-fit: cover;
 }
 
+.main_section_contact {
+  background-color: brown;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main_section_contact_item {
+  background-color: #007aff;
+  width: 770px;
+  height: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  margin-top: -225px; /* Змініть це значення, якщо потрібно додаткове коригування */
+  position: relative;
+  z-index: 3;
+}
+.main_section_contact_item_form {
+  width: 770px;
+  height: 450px;
+  background: url("../assets/citybg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.main_section_contact_item_form_content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main_section_contact_item_form_content_contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 196px;
+  height: 196px;
+  min-height: auto;
+  width: 276px;
+  max-width: 280px;
+}
+.main_section_contact_item_form_content_contacts_info {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 11px 0;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form_header {
+  height: 84px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_section_contact_item_form_content_form {
+  max-height: 196px;
+  height: 196px;
+  min-height: auto;
+  width: 250px;
+  max-width: 266px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main_section_contact_item_form_content_form_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.main_section_contact_item_form_content_form_button_submit {
+  width: 100px;
+  border: 1px solid #2c4058;
+  padding: 11px 21px;
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+.main_section_contact_item_form_content_form_button_submit:hover {
+  background-color: rgba(73, 17, 163, 0.418);
+  border: 1px solid #eaecee;
+  color: #eaecee;
+  -webkit-box-shadow: 0px 0px 9px 4px rgba(202, 157, 245, 0.63);
+          box-shadow: 0px 0px 9px 4px rgba(202, 157, 245, 0.63);
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+}
+.main_section_contact_item_form_content_form_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main_section_contact_item_form_content_form_user_input {
+  opacity: 0.2;
+  border-bottom: 1px solid #2c4058;
+  width: 100%;
+  padding: 5px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+.main_section_contact_item_form_content_form_user_input:focus {
+  border-bottom: 1px solid #0d4185;
+  opacity: 0.9;
+}
+
+.IPAZAH-content-container {
+  content: url("../assets/Pin.svg");
+}
+
 .map {
   width: 100%;
-  height: 400px;
+  height: 600px;
   background-color: gray;
+}
+
+.main_section_contact_map {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  height: 600px;
+  background-color: gray;
+  position: relative;
+  z-index: 2;
 }
