@@ -19,8 +19,8 @@ const swiperLast = new Swiper(".swiper .last", {
   spaceBetween: 10,
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".third .swiper-button-next",
+    prevEl: ".third .swiper-button-prev",
   },
 });
 

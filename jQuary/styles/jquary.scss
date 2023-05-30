@@ -133,7 +133,9 @@
 }
 
 .logos {
-  margin: 0 !important;
+  margin: 0 auto!important;
+  position: relative;
+  top: 30px;
 }
 
 .button-sect {
@@ -166,6 +168,27 @@
   padding: 15px 57px;
   max-width: 227px;
 }
+
+.lol{
+  width: auto;
+}
+
+.swiper-button-prev:after{
+  content: url("../assets/prev.svg");
+}
+
+.swiper-button-prev:hover::after{
+  content: url("../assets/prev-hover.svg");
+}
+
+.swiper-button-next:after{
+  content: url("../assets/next.svg");
+}
+
+.swiper-button-next:hover::after{
+  content: url("../assets/next-hover.svg");
+}
+
 
 // FOOTER
 
@@ -240,6 +263,7 @@
           width: 100%;
           justify-content: space-between;
           gap: 3px;
+          cursor: pointer;
 
           &_inst {
             width: 30px;
