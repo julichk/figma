@@ -165,7 +165,9 @@
 }
 
 .logos {
-  margin: 0 !important;
+  margin: 0 auto !important;
+  position: relative;
+  top: 30px;
 }
 
 .button-sect {
@@ -201,6 +203,26 @@
   border: 2px solid #000000;
   padding: 15px 57px;
   max-width: 227px;
+}
+
+.lol {
+  width: auto;
+}
+
+.swiper-button-prev:after {
+  content: url("../assets/prev.svg");
+}
+
+.swiper-button-prev:hover::after {
+  content: url("../assets/prev-hover.svg");
+}
+
+.swiper-button-next:after {
+  content: url("../assets/next.svg");
+}
+
+.swiper-button-next:hover::after {
+  content: url("../assets/next-hover.svg");
 }
 
 .footer {
@@ -301,6 +323,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 3px;
+  cursor: pointer;
 }
 .footer_conteiner_block-contact_item_icons_inst {
   width: 30px;
