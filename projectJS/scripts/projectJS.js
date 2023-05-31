@@ -1,10 +1,10 @@
 // let map;
 
 // async function initMap() {
-  // The location of Uluru
-  // const position = { lat: 40.670145, lng: -73.910384 };
-  // Request needed libraries.
-  //@ts-ignore
+// The location of Uluru
+// const position = { lat: 40.670145, lng: -73.910384 };
+// Request needed libraries.
+//@ts-ignore
 //   const { Map } = await google.maps.importLibrary("maps");
 //   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
@@ -24,6 +24,36 @@
 // }
 
 // initMap();
+// form
+
+const myForm = document.forms[0];
+
+console.log(myForm);
+
+const myFormInput = myForm.fname;
+console.log(myFormInput);
+
+$(document).ready(function () {
+  // Обробник події відправки форми
+  $(".main_section_contact_item_form_content_form_button_submit").click(
+    function (event) {
+      event.preventDefault(); // Зупинити стандартну поведінку відправки форми
+
+      var formData = $(
+        ".main_section_contact_item_form_content_form_user"
+      ).serialize(); // Серіалізувати дані форми
+
+      // Ваш код для використання серіалізованих даних форми
+      console.log(formData);
+      $(".main_section_contact_item_form_content_form_user").remove();
+      $(".gif").html('<img src="./assets/gif-submited.gif"/>');
+      // Ви можете відправити дані форми на сервер або виконати інші дії з даними
+
+      // При бажанні, ви можете також відобразити серіалізовані дані форми в окремому елементі на сторінці
+      $("#serializedData").text(formData);
+    }
+  );
+});
 
 // ПЕРШИЙ СЛАЙДЕР
 $(document).ready(function () {
@@ -92,14 +122,12 @@ document
       '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
     );
   });
-document
-  .querySelector(".append-slide")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-    swiper.appendSlide(
-      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-    );
-  });
+document.querySelector(".append-slide").addEventListener("click", function (e) {
+  e.preventDefault();
+  swiper.appendSlide(
+    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+  );
+});
 document
   .querySelector(".append-2-slides")
   .addEventListener("click", function (e) {
