@@ -59,8 +59,15 @@
           </div>
         </nav>
         <div class="header_user">
-          <img src="./assets/search-icon.svg" alt="search-icon" />
-          <img src="./assets/profile-icon.svg" alt="profile-icon" />
+          <div class="hover_user"><svg class="search_hover icons_hover" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M36 34.1172L25.944 24.0611C28.3605 21.1601 29.5655 17.439 29.3084 13.6721C29.0513 9.90519 27.3518 6.38241 24.5635 3.83662C21.7751 1.29083 18.1127 -0.0819787 14.338 0.00378988C10.5633 0.0895584 6.96692 1.6273 4.29711 4.29711C1.6273 6.96692 0.0895584 10.5633 0.00378988 14.338C-0.0819787 18.1127 1.29083 21.7751 3.83662 24.5635C6.38241 27.3518 9.90519 29.0513 13.6721 29.3084C17.439 29.5655 21.1601 28.3605 24.0611 25.944L34.1172 36L36 34.1172ZM2.71076 14.6949C2.71076 12.3246 3.41361 10.0076 4.73045 8.03686C6.04728 6.06608 7.91894 4.53004 10.1088 3.62299C12.2986 2.71594 14.7082 2.47862 17.0329 2.94103C19.3576 3.40344 21.4929 4.54482 23.1689 6.22083C24.845 7.89684 25.9863 10.0322 26.4487 12.3569C26.9112 14.6816 26.6738 17.0912 25.7668 19.281C24.8597 21.4708 23.3237 23.3425 21.3529 24.6593C19.3821 25.9762 17.0651 26.679 14.6949 26.679C11.5176 26.6755 8.47142 25.4117 6.22472 23.1651C3.97802 20.9184 2.71428 17.8722 2.71076 14.6949Z" fill="black"/>
+          </svg></div>
+          <div class="hover_user">
+            <svg class="icons_hover icon_user"width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 1C9.0586 1 1 9.0586 1 19C1 28.9414 9.0586 37 19 37C28.9414 37 37 28.9414 37 19C37 9.0586 28.9414 1 19 1Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M5 30C5 30 9.03726 24.9286 18.9991 24.9286C28.9609 24.9286 33 30 33 30H5ZM18.9991 18.6917C20.4402 18.6917 21.8223 18.1285 22.8413 17.126C23.8603 16.1234 24.4328 14.7637 24.4328 13.3459C24.4328 11.9281 23.8603 10.5683 22.8413 9.56577C21.8223 8.56322 20.4402 8 18.9991 8C17.558 8 16.1759 8.56322 15.1569 9.56577C14.1378 10.5683 13.5654 11.9281 13.5654 13.3459C13.5654 14.7637 14.1378 16.1234 15.1569 17.126C16.1759 18.1285 17.558 18.6917 18.9991 18.6917V18.6917Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
         </div>
       </header>
       <main class="main">
@@ -96,7 +103,7 @@
         </div>
         <!-- second slider -->
         <div class="swiper guitar">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper center">
             <div class="swiper-slide">
               <img src="./assets/guitar1.png" alt="" />
             </div>
@@ -131,6 +138,7 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
+        <div class="swiper-pagination second swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-ea75d75bcd96ed03"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span></div>
         <div class="button-sect">
           <button class="button-sect_of-second-sl" type="submit">
             View more
@@ -138,8 +146,8 @@
         </div>
         <!-- third slider -->
         <div class="last-section">
-          <div class="last-section_header">
-            <h2 class="title_header">new arrivals</h2>
+          <div class="last-section_header partners">
+            <h2 class="title_header">our partners</h2>
           </div>
           <div class="swiper last">
             <div class="swiper-wrapper lol">
@@ -161,7 +169,7 @@
               <div class="swiper-slide logos">
                 <img src="./assets/fender.svg" alt="" />
               </div>
-              <div class="swiper-slide logos">
+              <div class="swiper-slide logos peavey">
                 <img src="./assets/peavey.svg" alt="" />
               </div>
               <div class="swiper-slide logos">
@@ -191,16 +199,17 @@
               <div class="swiper-slide logos">
                 <img src="./assets/peavey.svg" alt="" />
               </div>
-              <div class="swiper-slide logos">
+              <div class="swiper-slide logos peavey">
                 <img src="./assets/marshal.svg" alt="" />
               </div>
               <div class="swiper-slide logos">
                 <img src="./assets/orange.svg" alt="" />
               </div>
             </div>
-            <div class="third swiper-button-prev"></div>
-            <div class="third swiper-button-next"></div>
+            <div class=" swiper-button-prev"></div>
+            <div class=" swiper-button-next"></div>
           </div>
+          <div class="swiper-pagination third swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-ea75d75bcd96ed03"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 3" aria-current="true"></span></div>
         </div>
       </main>
       <footer class="footer">
@@ -241,7 +250,8 @@
             <p>Contact us</p>
             <div class="footer_conteiner_block-contact_item">
               <div class="footer_conteiner_block-contact_item_icons">
-                <svg
+                <div class="you">
+                  <svg
                   class="footer_conteiner_block-contact_item_icons_hover"
                   width="30"
                   height="31"
@@ -254,7 +264,9 @@
                     fill="#F8F1EA"
                   />
                 </svg>
-                <svg
+                </div>
+                <div class="you">
+                  <svg
                   class="footer_conteiner_block-contact_item_icons_hover"
                   width="15"
                   height="31"
@@ -267,7 +279,9 @@
                     fill="#F8F1EA"
                   />
                 </svg>
-                <svg
+                </div>
+                <div class="you">
+                  <svg
                   class="footer_conteiner_block-contact_item_icons_hover"
                   width="23"
                   height="31"
@@ -280,24 +294,26 @@
                     fill="#F8F1EA"
                   />
                 </svg>
-                <svg
-                  class="footer_conteiner_block-contact_item_icons_hover-twit"
+                </div>
+                <div class="you">
+                  <svg
+                  class="footer_conteiner_block-contact_item_icons_hover-stroke"
                   width="38"
                   height="33"
                   viewBox="0 0 38 33"
                   fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M37 1.51681C37 1.51681 33.6978 3.50971 31.8618 4.07482C30.8763 2.91704 29.5665 2.09645 28.1097 1.724C26.6528 1.35156 25.1192 1.44525 23.7161 1.99239C22.3131 2.53953 21.1084 3.51373 20.2649 4.78323C19.4214 6.05272 18.9799 7.55627 19 9.09051V10.7624C16.1243 10.8386 13.2748 10.187 10.7053 8.86555C8.13576 7.54414 5.92597 5.59396 4.27273 3.18871C4.27273 3.18871 -2.27273 18.2358 12.4545 24.9234C9.0845 27.2606 5.06989 28.4326 1 28.2672C15.7273 36.6267 33.7273 28.2672 33.7273 9.04035C33.7273 8.57556 33.6815 8.11078 33.5964 7.65268C35.2655 5.97075 37 1.51681 37 1.51681Z"
                     stroke="#F8F1EA"
                     stroke-width="2"
                     stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <svg
-                  class="footer_conteiner_block-contact_item_icons_hover"
+                    stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <div class="you">
+                  <svg
+                  class="footer_conteiner_block-contact_item_icons_hover-stroke"
                   width="42"
                   height="33"
                   viewBox="0 0 42 33"
@@ -319,6 +335,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
+                </div>
               </div>
               <p>0800 300 4040</p>
             </div>

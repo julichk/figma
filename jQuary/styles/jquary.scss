@@ -1,7 +1,7 @@
+
+
 .content {
-  width: 1440px;
-  //background-color: aqua;
-  //padding: 0 44px;
+  width: 100%;
 }
 
 // HEADER + NAVBAR
@@ -14,9 +14,28 @@
   padding: 0 58px;
   gap: 356px;
 
+  @media(max-width: 1334px){
+    padding: 0;
+  }
+
+  @media(max-width: 1208px){
+    gap: 87px;
+  }
+
+  @media(max-width: 827px){
+    gap: 20px;
+  }
+
+  @media(max-width: 700px){
+    justify-content: space-around;;
+  }
+
   &_navbar {
     width: 100%;
     display: flex;
+    @media(max-width: 700px){
+      width: 205px;
+    }
 
     &_links {
       display: flex;
@@ -24,11 +43,20 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 100%;
+     width: 100%;
+      flex: 1;
+
+      @media(max-width: 1334px){
+        gap: 87px;
+      }
+      @media(max-width: 827px){
+        gap: 20px;
+      }
 
       &_logo {
         width: 182px;
         height: 32px;
+        flex: 1;
       }
 
       &_list {
@@ -36,6 +64,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media(max-width: 700px){
+          display: none;
+        }
       }
     }
   }
@@ -44,6 +76,13 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @media(max-width: 1334px){
+      justify-content: space-around;;
+    }
+    @media(max-width: 700px){
+      width: 100px;
+    }
   }
 }
 
@@ -73,6 +112,29 @@
 }
 // /HEADER + NAVBAR
 
+.icons_hover{
+  cursor: pointer;
+}
+
+.hover_user:hover .search_hover path{
+  fill:#f16a50;
+}
+.hover_user:hover .icon_user path{
+  stroke:#f16a50;
+}
+
+// .icons_hover:hover{
+//   //fill:#f16a50;
+//   background-color: #f16a50;
+//   border-radius: 9px;
+// }
+
+// .icon_user:hover{
+//   //fill:#f16a50;
+//   background-color: #f16a50;
+//   border-radius: 50%;
+// }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -81,7 +143,7 @@
 //SLIDER 1
 .baner {
   width: 100%;
-  height: 700px;
+  //height: 700px;
   background-color: aquamarine;
 }
 
@@ -114,13 +176,19 @@
   margin: 0 !important;
 }
 
+.center{
+  @media(max-width: 767px){
+    justify-content: space-around;
+  }
+}
+
 //TITLE HEADER2
 .last-section {
   background: #f8f1ea;
   display: flex;
   flex-direction: column;
   gap: 53px;
-  height: 290px;
+  height: 310px;
   padding: 10px;
 }
 //SLIDER3
@@ -130,13 +198,21 @@
   align-items: center !important;
   margin: 0 !important;
   justify-content: center;
+  padding: 0 79px 0 0;
 }
 
 .logos {
-  margin: 0 auto!important;
+  //margin: 0 auto!important;
   position: relative;
   top: 30px;
+  height: 100px;
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+
+  
 }
+
 
 .button-sect {
   width: 100%;
@@ -171,6 +247,12 @@
 
 .lol{
   width: auto;
+  
+  @media (max-width: 900px){
+    justify-content: space-between;
+    gap: 100px;
+    //background-color: #35312d;
+  }
 }
 
 .swiper-button-prev:after{
@@ -206,17 +288,34 @@
   padding-top: 70px;
   padding-bottom: 7px;
 
+  @media(max-width: 871px){
+    padding: 70px 20px 7px;
+  }
+
   &_conteiner {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 300px;
+    padding-left: 143px;
+
+    @media(max-width: 1024px){
+      padding-left: 50px;
+    }
+
+    @media(max-width: 871px){
+      gap: 100px;
+    }
 
     &_block {
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 35px;
+
+      @media(min-width: 2560px){
+        width: 32%;
+      }
 
       &_logo {
         width: 150px;
@@ -249,7 +348,10 @@
       font-size: 26px;
       line-height: 32px;
       color: #f8f1ea;
-      //align-items: center;
+
+      @media(min-width: 2560px){
+        width: 11%;
+      }
 
       &_item {
         display: flex;
@@ -298,11 +400,44 @@
     }
   }
 }
-.footer_conteiner_block-contact_item_icons_hover path:hover {
-  stroke: #f16a50;
+.you:hover .footer_conteiner_block-contact_item_icons_hover path{
+  //stroke: #f16a50;
   fill: #f16a50;
 }
 
-.footer_conteiner_block-contact_item_icons_hover-twit path:hover {
+.you:hover .footer_conteiner_block-contact_item_icons_hover-stroke path {
   stroke: #f16a50;
+}
+
+.partners{
+  margin-top: 30px;
+}
+.second{
+  display: none;
+  position: static;
+
+  @media(max-width: 700px){
+    display: block;
+  }
+}
+
+.swiper-button-next, .swiper-button-prev{
+  @media(max-width: 700px){
+    display: none;
+  }
+}
+
+.third{
+  display: none;
+  //position: static;
+
+  @media(max-width: 700px){
+    display:block;
+    background-color: aqua;
+    position: static;
+  }
+}
+
+.swiper-pagination-bullet-active{
+background-color: #f16a50;
 }

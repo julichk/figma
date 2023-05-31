@@ -1,26 +1,51 @@
 // second slider
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper.guitar", {
   direction: "horizontal",
   loop: true,
-  slidesPerView: 5,
+  //slidesPerView: 5,
   spaceBetween: 10,
 
+  pagination: {
+    el: ".second",
+    clickable: true,
+  },
+
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".second .swiper-button-next",
+    prevEl: ".second .swiper-button-prev",
+  },
+
+  breakpoints: {
+    767: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    970: {
+      slidesPerView: 3,
+    },
+    1000: {
+      slidesPerView: 5,
+    },
   },
 });
 
 // third slider
-const swiperLast = new Swiper(".swiper .last", {
+const swiperLast = new Swiper(".swiper.last", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 5,
   spaceBetween: 10,
 
+  pagination: {
+    el: ".last-section .swiper-pagination",
+    clickable: true,
+  },
+
   navigation: {
-    nextEl: ".third .swiper-button-next",
-    prevEl: ".third .swiper-button-prev",
+    nextEl: ".swiper.last .swiper-button-next",
+    prevEl: ".swiper.last .swiper-button-prev",
   },
 });
 
