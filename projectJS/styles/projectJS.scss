@@ -13,7 +13,6 @@
   width: 100%;
   height: 700px;
   padding: 0 50px 0 50px;
-  background-color: brown;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,16 +76,8 @@
 }
 
 .header_container_social_icon,
-.header_title_arrow {
+.header_title_arrow, .media {
   cursor: pointer;
-}
-
-.header_container_social_icon circle:hover {
-  fill: #ffffff;
-}
-
-.header_title_arrow path:hover {
-  fill: #ffffff !important;
 }
 
 .green {
@@ -175,6 +166,8 @@
 // MAIN
 .main {
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .main_header {
@@ -722,12 +715,13 @@
 }
 
 .main_section_contact {
-  background-color: brown;
+  //background-color: brown;
   //width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   //height: 900px;
+  padding-top: 20px;
 
   &_item {
     background-color: #007aff;
@@ -738,7 +732,7 @@
     align-items: center;
     background-color: #fff;
     margin-top: -225px; /* Змініть це значення, якщо потрібно додаткове коригування */
-  //margin-bottom: 50px;
+    //margin-bottom: 50px;
     position: relative;
     z-index: 3;
 
@@ -809,6 +803,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   &_button {
     display: flex;
@@ -884,3 +879,110 @@
   z-index: 2;
 }
 
+.gif {
+  width: 200px;
+  height: 200px;
+}
+
+.gif img {
+  max-width: 100%;
+  height: auto;
+}
+
+//  FOOTER
+.footer {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  margin-top: -225px;
+
+  &_social {
+    width: 100%;
+    height: 549px;
+    background: url("../assets/BackgroundFooter.png");
+    background-repeat: no-repeat;
+    background-size: cover; //можна ще контейн поставити, тоді це виглядає більш алаптивно, але тоді є трабли з блоками або 100%
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_content {
+      width: 770px;
+      height: 250px;
+      display: flex;
+    }
+  }
+}
+
+.footer_social_content_copy {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+
+  &_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+
+    &_text {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 14px;
+      color: #ffffff;
+    }
+  }
+
+  
+}
+
+.footer_social_content_media {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+
+  &_item{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    gap: 10px;
+
+    &_icons{
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+}
+
+.svg-hover{
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// hover for svgs
+
+.svg-hover:hover .media {
+  fill: #ffffffa7;
+  border-radius: 50%;
+}
+
+.svg-hover:hover .header_title_arrow path{
+  fill: #ffffffa7;
+}
+
+.svg-hover:hover .header_container_social_icon {
+  fill: #ffffffa7;
+}
