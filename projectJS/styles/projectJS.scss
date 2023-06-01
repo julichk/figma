@@ -716,12 +716,9 @@
 }
 
 .main_section_contact {
-  //background-color: brown;
-  //width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  //height: 900px;
   padding-top: 20px;
 
   &_item {
@@ -732,8 +729,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    margin-top: -225px; /* Змініть це значення, якщо потрібно додаткове коригування */
-    //margin-bottom: 50px;
+    margin-top: -225px; 
     position: relative;
     z-index: 3;
 

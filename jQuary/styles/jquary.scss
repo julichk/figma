@@ -26,6 +26,7 @@
 
   @media (max-width: 700px) {
     justify-content: space-around;
+    height: 50px;
   }
 
   &_navbar {
@@ -81,6 +82,11 @@
     @media (max-width: 700px) {
       width: 100px;
     }
+
+    @media (min-width: 1441px) {
+      width: 10%;
+      justify-content: space-around;
+    }
   }
 }
 
@@ -108,7 +114,19 @@
     }
   }
 }
-// /HEADER + NAVBAR
+
+.header_navbar_links_logo{
+  @media (max-width: 590px) {
+    height: 27px;
+  }
+}
+
+.hover_user, .search_hover, .icon_user{
+  @media (max-width: 590px) {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 .icons_hover {
   cursor: pointer;
@@ -121,18 +139,8 @@
   stroke: #f16a50;
 }
 
-// .icons_hover:hover{
-//   //fill:#f16a50;
-//   background-color: #f16a50;
-//   border-radius: 9px;
-// }
 
-// .icon_user:hover{
-//   //fill:#f16a50;
-//   background-color: #f16a50;
-//   border-radius: 50%;
-// }
-
+// MAIN
 .main {
   display: flex;
   flex-direction: column;
@@ -141,19 +149,12 @@
 //SLIDER 1
 .baner {
   width: 100%;
-  //height: 700px;
-  background-color: aquamarine;
-}
-
-.wrapper-first {
-  background-color: blueviolet;
 }
 
 .swiper-slide_img {
   width: 100%;
 }
 
-//TITLE HEADER
 .title {
   width: 100%;
   height: 40px;
@@ -168,19 +169,30 @@
     text-transform: uppercase;
   }
 }
-//SLIDER2
 
+//SLIDER2
 .guitar {
   margin: 0 !important;
 }
 
-.center {
+.guitar-slide{
+
   @media (max-width: 767px) {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-//TITLE HEADER2
+.second {
+  display: none;
+  position: static;
+
+  @media (max-width: 700px) {
+    display: block;
+  }
+}
+
 .last-section {
   background: #f8f1ea;
   display: flex;
@@ -189,6 +201,7 @@
   height: 310px;
   padding: 10px;
 }
+
 //SLIDER3
 .last {
   height: 100%;
@@ -200,12 +213,10 @@
 }
 
 .logos {
-  //margin: 0 auto!important;
   position: relative;
   top: 30px;
   height: 100px;
   display: flex;
-  //justify-content: center;
   align-items: center;
 }
 
@@ -240,13 +251,21 @@
   max-width: 227px;
 }
 
-.lol {
+.third-wrap {
   width: auto;
 
   @media (max-width: 900px) {
     justify-content: space-between;
     gap: 100px;
-    //background-color: #35312d;
+  }
+}
+
+.third-pag {
+  display: none;
+
+  @media (max-width: 700px) {
+    display: block;
+    position: static;
   }
 }
 
@@ -267,7 +286,6 @@
 }
 
 // FOOTER
-
 .footer {
   background: #35312d;
   padding: 0 58px;
@@ -284,6 +302,7 @@
 
   @media (max-width: 871px) {
     padding: 70px 20px 7px;
+    //flex-direction: row;
   }
 
   &_conteiner {
@@ -301,14 +320,29 @@
       gap: 100px;
     }
 
+    @media (max-width: 590px) {
+      //flex-direction: column;
+      gap: 15px;
+      padding-left: 5px;
+    }
+
     &_block {
       width: 100%;
       display: flex;
       flex-direction: column;
       gap: 35px;
 
-      @media (min-width: 2560px) {
+      @media (min-width: 2500px) {
         width: 32%;
+      }
+
+      @media (max-width: 871px) {
+        flex-direction: row;
+      }
+
+      @media (max-width: 590px) {
+        flex-direction: column;
+        gap: 15px;
       }
 
       &_logo {
@@ -327,6 +361,11 @@
             font-size: 20px;
             line-height: 24px;
             color: #f8f1ea;
+
+            @media (max-width: 590px) {
+              font-size: 14;
+              background-color: aqua;
+            }
           }
         }
       }
@@ -343,8 +382,14 @@
       line-height: 32px;
       color: #f8f1ea;
 
-      @media (min-width: 2560px) {
+      @media (min-width: 2230px) {
         width: 11%;
+      }
+
+      @media (max-width: 590px) {
+        flex-direction: column;
+        font-size: 16px;
+        color: aquamarine;
       }
 
       &_item {
@@ -352,7 +397,6 @@
         flex-direction: column;
         max-width: 325px;
         gap: 35px;
-        //align-items: center;
 
         &_icons {
           display: flex;
@@ -394,8 +438,21 @@
     }
   }
 }
+
+.phone-number, .copyright{
+  @media (max-width: 590px) {
+    font-size: 10px;
+  }
+}
+
+.footer_conteiner_block-contact_item_icons_hover, .footer_conteiner_block-contact_item_icons_hover-stroke{
+  @media (max-width: 590px) {
+    width: 13px;
+    height: 13px;
+  }
+}
+
 .you:hover .footer_conteiner_block-contact_item_icons_hover path {
-  //stroke: #f16a50;
   fill: #f16a50;
 }
 
@@ -406,30 +463,13 @@
 .partners {
   margin-top: 30px;
 }
-.second {
-  display: none;
-  position: static;
 
-  @media (max-width: 700px) {
-    display: block;
-  }
-}
 
+// for second and third slider
 .swiper-button-next,
 .swiper-button-prev {
   @media (max-width: 700px) {
     display: none;
-  }
-}
-
-.third {
-  display: none;
-  //position: static;
-
-  @media (max-width: 700px) {
-    display: block;
-    background-color: aqua;
-    position: static;
   }
 }
 
