@@ -7,20 +7,18 @@ const myFormInput = myForm.fname;
 console.log(myFormInput);
 
 $(document).ready(function () {
-  
   $(".main_section_contact_item_form_content_form_button_submit").click(
     function (event) {
-      event.preventDefault(); 
+      event.preventDefault();
 
       var formData = $(
         ".main_section_contact_item_form_content_form_user"
       ).serialize();
 
-      
       console.log(formData);
       $(".main_section_contact_item_form_content_form_user").remove();
       $(".gif").html('<img src="./assets/gif-submited.gif"/>');
-      
+
       $("#serializedData").text(formData);
     }
   );
@@ -76,21 +74,36 @@ let swiper = new Swiper(".mySwiper", {
 
 let appendNumber = 4;
 let prependNumber = 1;
-document.querySelector(".prepend-2-slides").addEventListener("click", function (e) {
+document
+  .querySelector(".prepend-2-slides")
+  .addEventListener("click", function (e) {
     e.preventDefault();
-    swiper.prependSlide(['<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",]);
+    swiper.prependSlide([
+      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+    ]);
   });
 
-document.querySelector(".prepend-slide").addEventListener("click", function (e) {
+document
+  .querySelector(".prepend-slide")
+  .addEventListener("click", function (e) {
     e.preventDefault();
-    swiper.prependSlide('<div class="swiper-slide">Slide ' + --prependNumber + "</div>");
+    swiper.prependSlide(
+      '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+    );
   });
 document.querySelector(".append-slide").addEventListener("click", function (e) {
   e.preventDefault();
-  swiper.appendSlide('<div class="swiper-slide">Slide ' + ++appendNumber + "</div>");
+  swiper.appendSlide(
+    '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+  );
 });
-document.querySelector(".append-2-slides").addEventListener("click", function (e) {
+document
+  .querySelector(".append-2-slides")
+  .addEventListener("click", function (e) {
     e.preventDefault();
-    swiper.appendSlide(['<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",'<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",]);
+    swiper.appendSlide([
+      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+      '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+    ]);
   });
