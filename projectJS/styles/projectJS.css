@@ -518,7 +518,7 @@
   height: 470px;
   max-width: 585px;
   max-height: 470px;
-  background-color: #7E5AFF;
+  background-color: #7e5aff;
 }
 .main_section-do_commerce_pics_img {
   position: absolute;
@@ -1131,8 +1131,8 @@
   font-weight: 400;
 }
 .main_section_contact_item_form_content_form_button_submit:hover {
-  background-color: #7E5AFF;
-  border: 1px solid #7E5AFF;
+  background-color: #7e5aff;
+  border: 1px solid #7e5aff;
   color: #eaecee;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
