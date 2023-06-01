@@ -34,6 +34,7 @@
   .header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    height: 50px;
   }
 }
 .header_navbar {
@@ -118,6 +119,13 @@
     width: 100px;
   }
 }
+@media (min-width: 1441px) {
+  .header_user {
+    width: 10%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 
 .header_navbar_links_list_item {
   font-family: "Montserrat";
@@ -151,6 +159,19 @@
   transition: ease-in 0.3s;
 }
 
+@media (max-width: 590px) {
+  .header_navbar_links_logo {
+    height: 27px;
+  }
+}
+
+@media (max-width: 590px) {
+  .hover_user, .search_hover, .icon_user {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .icons_hover {
   cursor: pointer;
 }
@@ -176,11 +197,6 @@
 
 .baner {
   width: 100%;
-  background-color: aquamarine;
-}
-
-.wrapper-first {
-  background-color: blueviolet;
 }
 
 .swiper-slide_img {
@@ -206,9 +222,26 @@
 }
 
 @media (max-width: 767px) {
-  .center {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  .guitar-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.second {
+  display: none;
+  position: static;
+}
+@media (max-width: 700px) {
+  .second {
+    display: block;
   }
 }
 
@@ -288,15 +321,25 @@
   max-width: 227px;
 }
 
-.lol {
+.third-wrap {
   width: auto;
 }
 @media (max-width: 900px) {
-  .lol {
+  .third-wrap {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     gap: 100px;
+  }
+}
+
+.third-pag {
+  display: none;
+}
+@media (max-width: 700px) {
+  .third-pag {
+    display: block;
+    position: static;
   }
 }
 
@@ -363,6 +406,12 @@
     gap: 100px;
   }
 }
+@media (max-width: 590px) {
+  .footer_conteiner {
+    gap: 15px;
+    padding-left: 5px;
+  }
+}
 .footer_conteiner_block {
   width: 100%;
   display: -webkit-box;
@@ -374,9 +423,26 @@
           flex-direction: column;
   gap: 35px;
 }
-@media (min-width: 2560px) {
+@media (min-width: 2500px) {
   .footer_conteiner_block {
     width: 32%;
+  }
+}
+@media (max-width: 871px) {
+  .footer_conteiner_block {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+@media (max-width: 590px) {
+  .footer_conteiner_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
   }
 }
 .footer_conteiner_block_logo {
@@ -399,6 +465,12 @@
   line-height: 24px;
   color: #f8f1ea;
 }
+@media (max-width: 590px) {
+  .footer_conteiner_block_links_item_anchor {
+    font-size: 14;
+    background-color: aqua;
+  }
+}
 .footer_conteiner_block-contact {
   width: 100%;
   display: -webkit-box;
@@ -415,9 +487,19 @@
   line-height: 32px;
   color: #f8f1ea;
 }
-@media (min-width: 2560px) {
+@media (min-width: 2230px) {
   .footer_conteiner_block-contact {
     width: 11%;
+  }
+}
+@media (max-width: 590px) {
+  .footer_conteiner_block-contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 16px;
+    color: aquamarine;
   }
 }
 .footer_conteiner_block-contact_item {
@@ -466,6 +548,19 @@
   height: 30px;
 }
 
+@media (max-width: 590px) {
+  .phone-number, .copyright {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 590px) {
+  .footer_conteiner_block-contact_item_icons_hover, .footer_conteiner_block-contact_item_icons_hover-stroke {
+    width: 13px;
+    height: 13px;
+  }
+}
+
 .you:hover .footer_conteiner_block-contact_item_icons_hover path {
   fill: #f16a50;
 }
@@ -478,31 +573,10 @@
   margin-top: 30px;
 }
 
-.second {
-  display: none;
-  position: static;
-}
-@media (max-width: 700px) {
-  .second {
-    display: block;
-  }
-}
-
 @media (max-width: 700px) {
   .swiper-button-next,
 .swiper-button-prev {
     display: none;
-  }
-}
-
-.third {
-  display: none;
-}
-@media (max-width: 700px) {
-  .third {
-    display: block;
-    background-color: aqua;
-    position: static;
   }
 }
 
