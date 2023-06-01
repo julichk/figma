@@ -34,22 +34,20 @@ const myFormInput = myForm.fname;
 console.log(myFormInput);
 
 $(document).ready(function () {
-  // Обробник події відправки форми
+  
   $(".main_section_contact_item_form_content_form_button_submit").click(
     function (event) {
-      event.preventDefault(); // Зупинити стандартну поведінку відправки форми
+      event.preventDefault(); 
 
       var formData = $(
         ".main_section_contact_item_form_content_form_user"
-      ).serialize(); // Серіалізувати дані форми
+      ).serialize();
 
-      // Ваш код для використання серіалізованих даних форми
+      
       console.log(formData);
       $(".main_section_contact_item_form_content_form_user").remove();
       $(".gif").html('<img src="./assets/gif-submited.gif"/>');
-      // Ви можете відправити дані форми на сервер або виконати інші дії з даними
-
-      // При бажанні, ви можете також відобразити серіалізовані дані форми в окремому елементі на сторінці
+      
       $("#serializedData").text(formData);
     }
   );

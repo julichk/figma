@@ -102,7 +102,8 @@
 }
 
 .header_container_social_icon,
-.header_title_arrow, .media {
+.header_title_arrow,
+.media {
   cursor: pointer;
 }
 
