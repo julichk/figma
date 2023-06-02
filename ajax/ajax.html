@@ -5,12 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script> -->
   </head>
   <body>
-    <ul class="films">
-      <li></li>
-    </ul>
+    <h1>Movie Search</h1>
+    <form class="search-form">
+      <label for="search-input">What do u search?</label>
+      <input type="text" class="search-input" required> 
+      <label for="typeSelect">Type:</label>
+      <select class="type-select">
+        <option value="movie">Movie</option>
+        <option value="series">Series</option>
+      </select>
+      <button type="submit">Search</button>
+    </form>
+    <div class="error"></div>
+    <ul class="film-list"></ul>
+    <div class="pagination"></div>
+    <div  class="film-details"></div>
+    <div class="pagination"></div>
 
     <script src="./scripts/ajax.js"></script>
   </body>
