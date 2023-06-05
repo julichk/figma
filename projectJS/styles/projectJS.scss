@@ -607,12 +607,9 @@
   }
 }
 
-.dots {
-  bottom: 30px !important;
-}
-
 .dots .swiper-pagination-bullet-active {
   background-color: rgb(255, 255, 255);
+
 }
 
 .append-buttons {
@@ -1032,4 +1029,15 @@
 
 .svg-hover:hover .header_container_social_icon {
   fill: #ffffffa7;
+}
+
+// size of pagination dots
+.swiper-pagination-bullet{
+  width: 10px;
+  height: 10px;
+
+  @media(min-width: 2500px){
+    width: 14px;
+    height: 14px;
+  }
 }

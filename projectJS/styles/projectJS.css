@@ -739,10 +739,6 @@
   }
 }
 
-.dots {
-  bottom: 30px !important;
-}
-
 .dots .swiper-pagination-bullet-active {
   background-color: rgb(255, 255, 255);
 }
@@ -1324,4 +1320,15 @@
 
 .svg-hover:hover .header_container_social_icon {
   fill: rgba(255, 255, 255, 0.6549019608);
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
+@media (min-width: 2500px) {
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
 }

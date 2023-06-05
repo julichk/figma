@@ -42,19 +42,63 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
-});
 
-// СКРОЛ
-const scroll = document.querySelector(".header_title_arrow");
-
-const scroolToInfo = () => {
-  const info = document.querySelector(".main_section-do");
-  info.scrollIntoView({
-    block: "start",
-    behavior: "smooth",
+  // СКРОЛИ
+  $(".header_title_arrow").on("click", function (event) {
+    event.preventDefault();
+    var targetSection = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(".main_section-do").offset().top,
+      },
+      1000
+    );
   });
-};
-scroll.addEventListener("click", scroolToInfo);
+
+  $(".to-about").on("click", function (event) {
+    event.preventDefault();
+    var targetSection = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(".main_header").offset().top,
+      },
+      1000
+    );
+  });
+
+  $(".to-projects").on("click", function (event) {
+    event.preventDefault();
+    var targetSection = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(".gallery").offset().top,
+      },
+      1000
+    );
+  });
+
+  $(".to-news").on("click", function (event) {
+    event.preventDefault();
+    var targetSection = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(".main_section_news").offset().top,
+      },
+      1000
+    );
+  });
+
+  $(".to-contacts").on("click", function (event) {
+    event.preventDefault();
+    var targetSection = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(".footer").offset().top,
+      },
+      1000
+    );
+  });
+});
 
 // slider 2
 let swiper = new Swiper(".mySwiper", {

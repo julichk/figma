@@ -87,7 +87,7 @@ const showFilmDetails = async (imdbID, containerDetails) => {
   }
 };
 
-const displayFilmDetails = (film,containerDetails) => {
+const displayFilmDetails = (film, containerDetails) => {
   containerDetails.innerHTML = "";
 
   const filmYear = document.createElement("p");
@@ -102,6 +102,3 @@ const displayFilmDetails = (film,containerDetails) => {
   filmPlot.textContent = `Plot: ${film.Plot}`;
   containerDetails.appendChild(filmPlot);
 };
-
-
-
