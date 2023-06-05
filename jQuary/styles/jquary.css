@@ -166,7 +166,9 @@
 }
 
 @media (max-width: 590px) {
-  .hover_user, .search_hover, .icon_user {
+  .hover_user,
+.search_hover,
+.icon_user {
     width: 20px;
     height: 20px;
   }
@@ -199,8 +201,81 @@
   width: 100%;
 }
 
+.swiper-slide {
+  position: relative;
+}
+
 .swiper-slide_img {
   width: 100%;
+}
+
+.baner_header {
+  position: absolute;
+  top: 120px;
+  right: 100px;
+  width: 350px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+@media (min-width: 2500px) {
+  .baner_header {
+    top: 380px;
+    right: 260px;
+    width: 440px;
+  }
+}
+.baner_header_text {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F8F1EA;
+}
+@media (min-width: 2500px) {
+  .baner_header_text {
+    font-size: 56px;
+  }
+}
+.baner_header_button {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  color: #F8F1EA;
+  border: 2px solid #F8F1EA;
+  padding: 17px 57px;
+  width: 231px;
+}
+@media (min-width: 2500px) {
+  .baner_header_button {
+    width: 350px;
+    font-size: 22px;
+  }
+}
+.baner_header_button:hover {
+  background-color: #f16a50;
+  border: 2px solid #f16a50;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+.baner_header_button_link {
+  color: #F8F1EA;
 }
 
 .title {
@@ -499,7 +574,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 16px;
-    color: aquamarine;
   }
 }
 .footer_conteiner_block-contact_item {
@@ -549,13 +623,15 @@
 }
 
 @media (max-width: 590px) {
-  .phone-number, .copyright {
+  .phone-number,
+.copyright {
     font-size: 10px;
   }
 }
 
 @media (max-width: 590px) {
-  .footer_conteiner_block-contact_item_icons_hover, .footer_conteiner_block-contact_item_icons_hover-stroke {
+  .footer_conteiner_block-contact_item_icons_hover,
+.footer_conteiner_block-contact_item_icons_hover-stroke {
     width: 13px;
     height: 13px;
   }
@@ -577,6 +653,19 @@
   .swiper-button-next,
 .swiper-button-prev {
     display: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  margin: 0 20px !important;
+}
+@media (max-width: 700px) {
+  .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    margin: 0 5px;
   }
 }
 

@@ -11,8 +11,8 @@ const swiper = new Swiper(".swiper.guitar", {
   },
 
   navigation: {
-    nextEl: ".second .swiper-button-next",
-    prevEl: ".second .swiper-button-prev",
+    nextEl: ".swiper.guitar .swiper-button-next",
+    prevEl: ".swiper.guitar .swiper-button-prev",
   },
 
   breakpoints: {
@@ -66,4 +66,3 @@ const swiperBaner = new Swiper(".baner", {
     prevEl: ".baner .swiper-pagination",
   },
 });
-console.log("love");
