@@ -1,10 +1,8 @@
+document.addEventListener("DOMContentLoaded", async () => {
+  const apiKey = "585747f07b393da08b9cfd3594d16e10";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Kyivʼ,ua&appid=${apiKey}`;
 
-document.addEventListener('DOMContentLoaded', async () => {
-
-  const apiKey = '585747f07b393da08b9cfd3594d16e10';
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New%20York,us&appid=${apiKey}`;
-
-  async function getWeather() {
+  async function getWeather(apiUrl) {
     try {
       const response = await axios.get(apiUrl);
       const data = response.data;
@@ -13,40 +11,37 @@ document.addEventListener('DOMContentLoaded', async () => {
       };
       return weatherData;
     } catch (error) {
-      console.log('Сталася помилка, соррі :', error);
+      console.log("Сталася помилка, соррі :", error);
       return null;
     }
   }
 
   function saveWeatherToLocalStorage(weatherData) {
-    //збереження даних погоди в localStorage
-    localStorage.setItem('weatherData', JSON.stringify(weatherData));
-    localStorage.setItem('lastWeatherUpdate', Date.now());
+    //збереження даних в localStorage
+    localStorage.setItem("weatherData", JSON.stringify(weatherData));
+    localStorage.setItem("lastWeatherUpdate", Date.now());
   }
 
   function getWeatherFromLocalStorage() {
-    
-    const weatherData = localStorage.getItem('weatherData');
+    const weatherData = localStorage.getItem("weatherData");
     return weatherData ? JSON.parse(weatherData) : null;
   }
 
   function isWeatherUpdateNeeded() {
     //перевірка чи треба оновлення погоди
-    const lastUpdate = localStorage.getItem('lastWeatherUpdate');
+    const lastUpdate = localStorage.getItem("lastWeatherUpdate");
     if (!lastUpdate) {
-      return true; 
+      return true;
     }
     const twoHours = 2 * 60 * 60 * 1000; // 2 години в мілісек
     const currentTime = Date.now();
     return currentTime - lastUpdate > twoHours;
   }
 
-  function displayWeatherOnPage(weatherData) {
-
-    const temperatureElement = document.querySelector('.temperature');
+  function displayWeatherTemperature(weatherData) {
+    const temperatureElement = document.querySelector(".temperature");
     const temperatureCelsius = Math.round(weatherData.temperature - 273.15);
     temperatureElement.textContent = `Temperature: ${temperatureCelsius}°C`;
-    
   }
 
   async function displayWeatherForecast() {
@@ -54,17 +49,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     const weatherData = getWeatherFromLocalStorage();
 
     if (!isWeatherUpdateNeeded()) {
-      return displayWeatherOnPage(weatherData);
+      return displayWeatherTemperature(weatherData);
     }
 
-    //отримання нових даних з серверу 
-    const newWeatherData = await getWeatherForecast();
+    //отримання нових даних з серверу
+    const newWeatherData = await getWeather(apiUrl);
 
     if (newWeatherData) {
       saveWeatherToLocalStorage(newWeatherData); //зберіігаю дані в локал
-      displayWeatherOnPage(newWeatherData);
+      displayWeatherTemperature(newWeatherData);
     } else {
-      console.log('Не вдалося отримати дані');
+      console.log("Не вдалося отримати дані");
     }
   }
 
