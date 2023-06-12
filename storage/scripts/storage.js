@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const apiKey = "585747f07b393da08b9cfd3594d16e10";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Kyivʼ,ua&appid=${apiKey}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Kyiv,ua&appid=${apiKey}`;
 
   async function getWeather(apiUrl) {
     try {
