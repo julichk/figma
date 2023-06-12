@@ -1,0 +1,26 @@
+.weather{
+    background: linear-gradient(0deg, rgba(25,237,244,1) 12%, rgba(54,172,240,1) 100%);
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin:  0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header{
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.temperature{
+    font-family: "Prompt", sans-serif;
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 40px;
+}
+
