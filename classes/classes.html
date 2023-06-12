@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/classes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,400;1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <div class="content">
+    <div class="circle">
+      <div class="input-container">
+        <label for="radius-input">Введіть радіус:</label>
+        <input type="text" class="radius-input input" min="0">
+      </div>
+      <div class="button-container">
+        <button class="calculate-button button button-89">Розрахувати</button>
+      </div>
+    
+      <div class="result-container">
+        <p class="diameter">Діаметр: </p>
+      </div>
+    </div>
+  
+    <div class="marker">
+     <div class="marker_input">
+      <div>
+        <label for="marker-color">Напиши колір(eng): </label>
+        <input type="text" class="marker-color input">
+      </div>
+      <div>
+        <label for="ink-level">Відсоток чорнил: </label>
+        <input type="text" class="ink-level input">
+      </div>
+      <div>
+        <label for="text-input">Текс: </label>
+        <input type="text" class="text-input input">
+      </div>
+     </div>
+      <button class="ink-button button button-89">Написати</button>
+      <div class="marker-text"></div>
+    </div>
+  </div>
+  <script src="./scripts/classes.js"></script>
+</body>
+</html>
